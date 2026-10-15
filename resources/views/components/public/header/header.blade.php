@@ -3,9 +3,9 @@
         class="sticky top-0 z-50 transition-all duration-300 w-full"
         :class="scrolled ? 'bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200/80' : 'bg-white border-b border-slate-100'">
     
-    <!-- Top Contact & Announcement Bar -->
-    <div class="bg-navy-950 text-white text-[11px] sm:text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-navy-900 select-none">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5">
+    <!-- Top Contact & Announcement Bar (Hidden on phone/mobile screens) -->
+    <div class="hidden md:block bg-navy-950 text-white text-[11px] sm:text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-navy-900 select-none">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2.5">
             <!-- Left: Direct Contact Information with Clean Icons -->
             <div class="flex items-center flex-wrap justify-center sm:justify-start gap-3 sm:gap-4 text-slate-300">
                 <a href="tel:+917122550192" class="inline-flex items-center gap-1.5 hover:text-logo-yellow transition-colors">
