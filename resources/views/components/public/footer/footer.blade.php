@@ -6,30 +6,17 @@
             
             <!-- Left: Brand Identity & Mission (Col 1-5) -->
             <div class="lg:col-span-5 space-y-4">
-                <a href="{{ url('/') }}" class="inline-flex items-center gap-3 group">
-                    <div class="bg-white p-1.5 rounded-xl shadow-xs inline-flex items-center justify-center">
-                        <img src="{{ asset('logo.webp') }}" 
-                             alt="NAVUDYAM Foundation" 
-                             class="h-10 w-auto" />
-                    </div>
-                    <div class="leading-tight">
-                        <span class="text-white font-extrabold text-base tracking-wide font-heading block">
-                            NAVUDYAM
-                        </span>
-                        <span class="text-amber-400 font-semibold text-[11px] tracking-wider uppercase block">
-                            Foundation
-                        </span>
-                    </div>
+                <a href="{{ url('/') }}" class="inline-flex items-center group">
+                    <img src="{{ asset('logo.webp') }}" 
+                         alt="NAVUDYAM Foundation" 
+                         class="h-12 w-auto brightness-0 invert opacity-95 transition-opacity group-hover:opacity-100 drop-shadow-sm" />
                 </a>
                 
                 <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
                     Empowering Navodaya alumni and rural youth to build real businesses, create local jobs, and support the next generation.
                 </p>
 
-                <div class="inline-flex items-center gap-2 text-[11px] text-slate-400 bg-navy-900/60 px-3 py-1.5 rounded-full border border-navy-800">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                    <span>Registered Section 8 Not-For-Profit • 80G & 12A Certified</span>
-                </div>
+       
             </div>
 
             <!-- Middle: Quick Navigation (Col 6-8) -->
