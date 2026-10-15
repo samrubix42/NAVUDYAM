@@ -1,120 +1,106 @@
-<footer class="bg-navy-950 text-slate-300 pt-16 pb-12 border-t-4 border-amber-500">
+<footer class="bg-navy-950 text-slate-400 py-12 sm:py-16 border-t border-navy-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Top Institutional Row -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-14 border-b border-navy-800">
-            <!-- Brand & Mission Column (Spans 2 cols) -->
-            <div class="lg:col-span-2 space-y-5">
-                <div class="flex items-center gap-3">
-                    <img src="{{ asset('logo.webp') }}" 
-                         alt="NAVUDYAM Foundation Logo" 
-                         class="h-14 w-auto bg-white/10 backdrop-blur-sm p-1 rounded-full border border-white/20" />
-                    <div>
-                        <span class="text-2xl font-bold tracking-tight text-white block">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-navy-900">
+            
+            <!-- Left: Brand Identity & Mission (Col 1-5) -->
+            <div class="lg:col-span-5 space-y-4">
+                <a href="{{ url('/') }}" class="inline-flex items-center gap-3 group">
+                    <div class="bg-white p-1.5 rounded-xl shadow-xs inline-flex items-center justify-center">
+                        <img src="{{ asset('logo.webp') }}" 
+                             alt="NAVUDYAM Foundation" 
+                             class="h-10 w-auto" />
+                    </div>
+                    <div class="leading-tight">
+                        <span class="text-white font-extrabold text-base tracking-wide font-heading block">
                             NAVUDYAM
                         </span>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">
-                            FOUNDATION
+                        <span class="text-amber-400 font-semibold text-[11px] tracking-wider uppercase block">
+                            Foundation
                         </span>
                     </div>
-                </div>
-
-                <p class="text-slate-300 text-sm leading-relaxed max-w-md">
-                    Dedicated to empowering Jawahar Navodaya Vidyalaya alumni, students, and rural youth across India. 
-                    From vocational excellence and specialized enterprise incubation in laundry & allied services, 
-                    to lifelong alumni-led mentorship and dignified livelihoods.
+                </a>
+                
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
+                    Empowering Navodaya alumni and rural youth to build real businesses, create local jobs, and support the next generation.
                 </p>
 
-                <!-- Non-Profit Compliance & Trust Badges (Smile / Wadhwani style) -->
-                <div class="pt-2 flex flex-wrap gap-2 text-xs">
-                    <span class="inline-flex items-center px-2.5 py-1 rounded bg-navy-900 border border-navy-700 text-emerald-400 font-medium">
-                        ✓ Registered Section 8 Not-For-Profit
-                    </span>
-                    <span class="inline-flex items-center px-2.5 py-1 rounded bg-navy-900 border border-navy-700 text-amber-300 font-medium">
-                        ✓ 80G & 12A Certified
-                    </span>
-                    <span class="inline-flex items-center px-2.5 py-1 rounded bg-navy-900 border border-navy-700 text-sky-300 font-medium">
-                        ✓ Pan-India JNV Network
-                    </span>
+                <div class="inline-flex items-center gap-2 text-[11px] text-slate-400 bg-navy-900/60 px-3 py-1.5 rounded-full border border-navy-800">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Registered Section 8 Not-For-Profit • 80G & 12A Certified</span>
                 </div>
             </div>
 
-            <!-- Focus Pillars Column -->
-            <div class="space-y-4">
-                <h4 class="text-white font-bold text-sm uppercase tracking-wider text-amber-400">
-                    Focus Pillars
+            <!-- Middle: Quick Navigation (Col 6-8) -->
+            <div class="lg:col-span-3 space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-white">
+                    Quick Links
                 </h4>
-                <ul class="space-y-2.5 text-sm">
-                    <li><a href="#pillars" class="hover:text-white transition-colors">Education & Skilling</a></li>
-                    <li><a href="#pillars" class="hover:text-white transition-colors">Enterprise Incubation</a></li>
-                    <li><a href="#pillars" class="hover:text-white transition-colors">Alumni Mentorship</a></li>
-                    <li><a href="#pillars" class="hover:text-white transition-colors">Navodayan Community</a></li>
-                    <li><a href="#programs" class="hover:text-white transition-colors">Laundry & Service Hubs</a></li>
-                    <li><a href="#model" class="hover:text-white transition-colors">The 4-Stage Pathway</a></li>
+                <ul class="space-y-2 text-xs sm:text-sm">
+                    <li>
+                        <a href="#mission" class="text-slate-400 hover:text-amber-400 transition-colors">Who We Are</a>
+                    </li>
+                    <li>
+                        <a href="#pillars" class="text-slate-400 hover:text-amber-400 transition-colors">Our Pillars</a>
+                    </li>
+                    <li>
+                        <a href="#model" class="text-slate-400 hover:text-amber-400 transition-colors">The 4-Step Model</a>
+                    </li>
+                    <li>
+                        <a href="#videos" class="text-slate-400 hover:text-amber-400 transition-colors">Stories in Motion</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog & Insights</a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- Flagship Programs Column -->
-            <div class="space-y-4">
-                <h4 class="text-white font-bold text-sm uppercase tracking-wider text-amber-400">
-                    Programs
+            <!-- Right: Connect & Contact (Col 9-12) -->
+            <div class="lg:col-span-4 space-y-4">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-white">
+                    Connect With Us
                 </h4>
-                <ul class="space-y-2.5 text-sm">
-                    <li><a href="#programs" class="hover:text-white transition-colors">Navudyam Enterprise Accelerator</a></li>
-                    <li><a href="#programs" class="hover:text-white transition-colors">NavoShiksha Leadership Grant</a></li>
-                    <li><a href="#programs" class="hover:text-white transition-colors">Margdarshan Mentorship Circle</a></li>
-                    <li><a href="#programs" class="hover:text-white transition-colors">Gram Udyam Incubator</a></li>
-                    <li><a href="#stories" class="hover:text-white transition-colors">Beneficiary Case Studies</a></li>
-                    <li><a href="#community" class="hover:text-white transition-colors">Alumni Giving Back</a></li>
-                </ul>
-            </div>
-
-            <!-- Newsletter & Connect Column -->
-            <div class="space-y-4">
-                <h4 class="text-white font-bold text-sm uppercase tracking-wider text-amber-400">
-                    Stay Connected
-                </h4>
-                <p class="text-xs text-slate-300">
-                    Subscribe to <em>The Navudyam Chronicle</em> — inspiring grassroots stories of enterprise and youth transformation.
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    Have questions about our programs or want to partner with us? Reach out anytime.
                 </p>
-
-                <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to NAVUDYAM Foundation updates.');" class="space-y-2">
-                    <div class="relative">
-                        <input type="email" 
-                               required
-                               placeholder="Enter your email" 
-                               class="w-full bg-navy-900 border border-navy-700 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                <div class="space-y-2 text-xs sm:text-sm">
+                    <div class="flex items-center gap-2 text-slate-300">
+                        <svg class="w-4 h-4 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <a href="mailto:connect@navudyam.org" class="hover:text-amber-400 transition-colors">
+                            connect@navudyam.org
+                        </a>
                     </div>
-                    <button type="submit" 
-                            class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-navy-950 font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-lg shadow transition-all">
-                        Subscribe
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <svg class="w-4 h-4 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+                <div>
+                    <button @click="$dispatch('open-inquiry-modal')" 
+                            type="button"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-sm cursor-pointer">
+                        <span>Get In Touch</span>
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
                     </button>
-                </form>
-
-                <div class="pt-2 text-xs text-slate-400">
-                    <p class="font-medium text-slate-200">Email: connect@navudyam.org</p>
-                    <p class="mt-0.5">National Office: New Delhi • India</p>
                 </div>
             </div>
+
         </div>
 
-        <!-- Middle Quote / Ethos Banner (Acumen style philosophy) -->
-        <div class="py-8 my-2 border-b border-navy-800 text-center max-w-3xl mx-auto">
-            <blockquote class="italic text-slate-300 text-sm md:text-base font-light">
-                "Rooted in the spirit of Jawahar Navodaya Vidyalayas: Where rural potential meets opportunity, 
-                and collective mentorship turns dreams into sustainable enterprises."
-            </blockquote>
-        </div>
-
-        <!-- Bottom Copyright & Legal Links -->
-        <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-            <p>© {{ date('Y') }} NAVUDYAM Foundation. All Rights Reserved. Built with pride for the Navodaya Family.</p>
-            <div class="flex flex-wrap items-center gap-6">
-                <a href="#mission" class="hover:text-slate-200 transition-colors">Privacy Policy</a>
-                <a href="#mission" class="hover:text-slate-200 transition-colors">Terms of Governance</a>
-                <a href="#impact" class="hover:text-slate-200 transition-colors">Annual Impact Reports</a>
-                <a href="#contact" class="hover:text-slate-200 transition-colors">Grievance & Whistleblower</a>
-            </div>
+        <!-- Bottom Copyright Row -->
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© {{ date('Y') }} NAVUDYAM Foundation. All Rights Reserved.</p>
+            <p class="text-slate-500 text-center sm:text-right">
+                Built with pride for the Navodaya Family
+            </p>
         </div>
 
     </div>

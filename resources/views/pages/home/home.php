@@ -6,8 +6,6 @@ use Livewire\Component;
 
 new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodayans — From Skills to Enterprise')] class extends Component
 {
-    public string $activeProgramFilter = 'all';
-
     public string $inquiryType = 'mentor';
 
     public string $inquiryName = '';
@@ -21,11 +19,6 @@ new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodaya
     public string $inquiryMessage = '';
 
     public bool $inquirySubmitted = false;
-
-    public function setProgramFilter(string $filter): void
-    {
-        $this->activeProgramFilter = $filter;
-    }
 
     public function submitInquiry(): void
     {

@@ -43,37 +43,34 @@
                 <a href="#model" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     The Model
                 </a>
-                <a href="#programs" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
-                    Programs
+                <a href="#videos" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                    Stories in Motion
                 </a>
-                <a href="#stories" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
-                    Stories of Impact
+                <a href="#blog" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                    Blog & Insights
                 </a>
                 <a href="#community" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Navodayan Network
                 </a>
             </nav>
 
-            <!-- Desktop Action CTA Buttons (Clean, rounded-md) -->
-            <div class="hidden lg:flex items-center gap-3">
-                <a href="#inquiry" 
-                   class="inline-flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wider text-navy-900 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-md transition-all duration-200 shadow-sm">
-                    Join as Mentor
-                </a>
-                <a href="#inquiry" 
-                   class="inline-flex items-center px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-navy-950 hover:bg-navy-900 border border-navy-950 rounded-md shadow-sm hover:shadow transition-all duration-200">
+            <!-- Desktop Action CTA Buttons (Clean, rounded-full, triggers modal) -->
+            <div class="hidden lg:flex items-center">
+                <button @click="$dispatch('open-inquiry-modal')" 
+                        type="button"
+                        class="inline-flex items-center px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-navy-950 hover:bg-navy-900 border border-navy-950 rounded-full shadow-sm hover:shadow transition-all duration-200 cursor-pointer">
                     <span>Get Involved</span>
                     <svg class="ml-1.5 w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
-                </a>
+                </button>
             </div>
 
             <!-- Mobile Hamburger Button -->
             <div class="flex lg:hidden">
                 <button type="button" 
                         @click="mobileMenuOpen = !mobileMenuOpen"
-                        class="p-2 rounded-md text-slate-700 hover:text-navy-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        class="p-2 rounded-full text-slate-700 hover:text-navy-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500"
                         aria-label="Toggle navigation menu">
                     <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -100,18 +97,17 @@
             <a href="#mission" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Who We Are</a>
             <a href="#pillars" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Pillars of Impact</a>
             <a href="#model" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">The Navudyam Model</a>
-            <a href="#programs" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Flagship Programs</a>
-            <a href="#stories" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Stories of Transformation</a>
+            <a href="#videos" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Stories in Motion</a>
+            <a href="#blog" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Blog & Insights</a>
             <a href="#community" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Navodayan Network</a>
             <a href="#contact" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Contact Us</a>
         </div>
         <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
-            <a href="#inquiry" @click="mobileMenuOpen = false" class="w-full text-center px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-navy-900 bg-slate-100 hover:bg-slate-200 rounded-lg">
-                Join as Mentor
-            </a>
-            <a href="#get-involved" @click="mobileMenuOpen = false" class="w-full text-center px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-navy-900 hover:bg-navy-800 rounded-lg shadow-sm">
+            <button @click="mobileMenuOpen = false; $dispatch('open-inquiry-modal')" 
+                    type="button"
+                    class="w-full text-center px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-navy-950 hover:bg-navy-900 rounded-full shadow-sm cursor-pointer">
                 Get Involved & Partner
-            </a>
+            </button>
         </div>
     </div>
 </header>
