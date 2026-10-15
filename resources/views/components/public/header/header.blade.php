@@ -40,6 +40,7 @@
                 <button @click="$dispatch('open-inquiry-modal')" type="button" class="hover:text-logo-yellow transition-colors cursor-pointer">
                     Contact Us
                 </button>
+            
             </div>
         </div>
     </div>

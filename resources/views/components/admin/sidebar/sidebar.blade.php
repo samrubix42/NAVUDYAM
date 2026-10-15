@@ -138,21 +138,24 @@
         <div class="p-3 border-t border-slate-200/80">
             <div class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-2.5 min-w-0">
-                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white font-semibold text-xs flex items-center justify-center shrink-0">
-                        NA
+                    <div class="w-8 h-8 rounded-full bg-slate-900 text-white font-semibold text-xs flex items-center justify-center shrink-0 uppercase">
+                        {{ substr(auth()->user()?->name ?? 'NA', 0, 2) }}
                     </div>
                     <div class="min-w-0">
-                        <p class="text-xs font-semibold text-slate-900 truncate">Navudyam Admin</p>
-                        <p class="text-[11px] text-slate-400 truncate">admin@navudyam.org</p>
+                        <p class="text-xs font-semibold text-slate-900 truncate">{{ auth()->user()?->name ?? 'Navudyam Admin' }}</p>
+                        <p class="text-[11px] text-slate-400 truncate">{{ auth()->user()?->email ?? 'admin@navudyam.org' }}</p>
                     </div>
                 </div>
-                <a href="{{ route('home') }}" 
-                   title="Return to site"
-                   class="p-1.5 rounded-md text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
-                    </svg>
-                </a>
+                <form method="POST" action="{{ route('logout') }}" class="inline">
+                    @csrf
+                    <button type="submit" 
+                            title="Sign out of Admin"
+                            class="p-1.5 rounded-md text-slate-400 hover:text-red-600 hover:bg-red-50 transition-colors cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
 

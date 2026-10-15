@@ -42,7 +42,7 @@
                     </li>
                     <li>
                         <a href="#contact" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>
-                    </li>
+                    </li>               
                 </ul>
             </div>
 
@@ -88,9 +88,11 @@
         <!-- Bottom Copyright Row -->
         <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <p>© {{ date('Y') }} NAVUDYAM Foundation. All Rights Reserved.</p>
-            <p class="text-slate-500 text-center sm:text-right">
-                Built with pride for the Navodaya Family
-            </p>
+            <div class="flex items-center gap-3 text-center sm:text-right">
+                <a href="{{ route('login') }}" class="hover:text-amber-400 transition-colors">Admin Portal</a>
+                <span>•</span>
+                <p>Built with pride for the Navodaya Family</p>
+            </div>
         </div>
 
     </div>
