@@ -68,8 +68,8 @@
                 <a href="#events" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Events
                 </a>
-                <a href="#blog" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
-                    Blog
+                <a href="#resources" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                    Stories & Resources
                 </a>
                 <a href="#contact" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Contact
@@ -120,7 +120,7 @@
             <a href="#about-us" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">About Us</a>
             <a href="#initiatives" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Our Initiatives</a>
             <a href="#events" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Events</a>
-            <a href="#blog" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Blog</a>
+            <a href="#resources" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Stories & Resources</a>
             <a href="#contact" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Contact</a>
         </div>
         <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">

@@ -51,7 +51,7 @@
                         <a href="#events" class="text-slate-400 hover:text-amber-400 transition-colors">Events</a>
                     </li>
                     <li>
-                        <a href="#blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog</a>
+                        <a href="#resources" class="text-slate-400 hover:text-amber-400 transition-colors">Stories & Resources</a>
                     </li>
                     <li>
                         <a href="#contact" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>

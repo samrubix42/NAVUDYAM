@@ -1002,15 +1002,15 @@
         </div>
     </section>
 
-    <!-- Blog Section (Clean, Uncluttered, No Badges) -->
-    <section id="blog" class="scroll-mt-24 py-16 lg:py-24 bg-[#FAF9F5]/70 border-b border-slate-200/70">
-        <div id="resources" class="scroll-mt-24"></div>
+    <!-- Stories & Resources Section (Clean, Uncluttered, No Badges) -->
+    <section id="resources" class="scroll-mt-24 py-16 lg:py-24 bg-[#FAF9F5]/70 border-b border-slate-200/70">
+        <div id="blog" class="scroll-mt-24"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Section Header: Clean, Simple, No Badges -->
             <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-2">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-950 tracking-tight font-heading">
-                    Blog
+                    Stories & Resources
                 </h2>
                 <p class="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
                     Field learnings, enterprise case studies, and practical guides from across the Navodaya community.
