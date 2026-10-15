@@ -48,6 +48,9 @@
                         <a href="#initiatives" class="text-slate-400 hover:text-amber-400 transition-colors">Our Initiatives</a>
                     </li>
                     <li>
+                        <a href="#events" class="text-slate-400 hover:text-amber-400 transition-colors">Events</a>
+                    </li>
+                    <li>
                         <a href="#blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog</a>
                     </li>
                     <li>
