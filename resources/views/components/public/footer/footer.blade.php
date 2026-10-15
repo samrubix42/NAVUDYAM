@@ -24,7 +24,7 @@
                 <h4 class="text-xs font-bold uppercase tracking-wider text-white">
                     Quick Links
                 </h4>
-                <ul class="space-y-2 text-xs sm:text-sm">
+                <ul class="space-y-2 text-xs sm:text-sm"> 
                     <li>
                         <a href="#home" class="text-slate-400 hover:text-amber-400 transition-colors">Home</a>
                     </li>
