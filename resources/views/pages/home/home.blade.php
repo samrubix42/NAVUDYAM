@@ -273,6 +273,96 @@
 
     </section>
 
+    <!-- Clean & Modern Infinite Marquee Strip (Just below Hero Slider) -->
+    <section class="relative overflow-hidden py-3.5 sm:py-4 bg-white border-b border-slate-200/80 select-none group">
+        <!-- Edge Gradient Fade Masks -->
+        <div class="absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+        <!-- Scrolling Marquee Track -->
+        <div class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap">
+            <!-- Set 1 -->
+            <div class="flex items-center gap-8 sm:gap-12 px-4 sm:px-6 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 font-heading">
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    660+ Jawahar Navodaya Vidyalayas
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    From Skills to Enterprise
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Alumni Mentorship Across 14+ Countries
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Grassroots Business Incubation
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Women Micro-Enterprises
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Commercial Laundry & Service Hubs
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Zero-Collateral Seed Support
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    NavoShiksha Innovation Labs
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Rural Youth Job Creation
+                </span>
+            </div>
+
+            <!-- Set 2 (Identical duplicate for seamless infinite loop) -->
+            <div class="flex items-center gap-8 sm:gap-12 px-4 sm:px-6 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 font-heading" aria-hidden="true">
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    660+ Jawahar Navodaya Vidyalayas
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    From Skills to Enterprise
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Alumni Mentorship Across 14+ Countries
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Grassroots Business Incubation
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Women Micro-Enterprises
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Commercial Laundry & Service Hubs
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Zero-Collateral Seed Support
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    NavoShiksha Innovation Labs
+                </span>
+                <span class="flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
+                    Rural Youth Job Creation
+                </span>
+            </div>
+        </div>
+    </section>
+
     <!-- Impact Counter Strip (Wadhwani Scorecard Style with Warm Welcoming Shades) -->
     <section id="impact" class="bg-[#FAF8F5] py-12 border-b border-amber-100/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
