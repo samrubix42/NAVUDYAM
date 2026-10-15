@@ -47,7 +47,7 @@
                 
                 <!-- Right Photography with Left Fade Mask -->
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/hero.jpg') }}" 
+                    <img src="{{ asset('images/hero.webp') }}" 
                          alt="Navudyam Foundation skilling and innovation" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -102,7 +102,7 @@
                 
                 <!-- Right Photography with Left Fade Mask -->
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/entrepreneur.jpg') }}" 
+                    <img src="{{ asset('images/entrepreneur.webp') }}" 
                          alt="Navudyam commercial laundry and service entrepreneur" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -153,7 +153,7 @@
                 
                 <!-- Right Photography with Left Fade Mask -->
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/mentorship.jpg') }}" 
+                    <img src="{{ asset('images/mentorship.webp') }}" 
                          alt="Navodaya alumni mentorship circle" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -204,7 +204,7 @@
                 
                 <!-- Right Photography with Left Fade Mask -->
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/education.jpg') }}" 
+                    <img src="{{ asset('images/education.webp') }}" 
                          alt="Jawahar Navodaya Vidyalaya students" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -412,7 +412,7 @@
                 
                 <!-- Left Visual: Plain Clean Image (No overlays, no frame design) -->
                 <div class="lg:col-span-5">
-                    <img src="{{ asset('images/education.jpg') }}" 
+                    <img src="{{ asset('images/education.webp') }}" 
                          alt="Jawahar Navodaya Vidyalaya students and community" 
                          class="w-full h-80 sm:h-96 lg:h-[480px] object-cover rounded-2xl shadow-sm border border-amber-100/60" />
                 </div>
@@ -679,25 +679,25 @@
                      {
                          id: 'van',
                          title: 'Outreach Across Himalayan Hills',
-                         thumbnail: '{{ asset('images/video_van.jpg') }}',
+                         thumbnail: '{{ asset('images/video_van.webp') }}',
                          youtubeUrl: 'https://www.youtube.com/watch?v=ScMzIvxBSi4'
                      },
                      {
                          id: 'craft',
                          title: 'Rural Craft & Vocational Skilling',
-                         thumbnail: '{{ asset('images/video_craft.jpg') }}',
+                         thumbnail: '{{ asset('images/video_craft.webp') }}',
                          youtubeUrl: 'https://www.youtube.com/watch?v=kJQP7kiw5Fk'
                      },
                      {
                          id: 'woman',
                          title: 'Women Enterprise in Village Markets',
-                         thumbnail: '{{ asset('images/video_woman.jpg') }}',
+                         thumbnail: '{{ asset('images/video_woman.webp') }}',
                          youtubeUrl: 'https://www.youtube.com/watch?v=L_LUpnjgPso'
                      },
                      {
                          id: 'laundry',
                          title: 'Starting a Small Town Laundry Enterprise',
-                         thumbnail: '{{ asset('images/video_laundry.jpg') }}',
+                         thumbnail: '{{ asset('images/video_laundry.webp') }}',
                          youtubeUrl: 'https://www.youtube.com/watch?v=ScMzIvxBSi4'
                      }
                  ],
@@ -1026,7 +1026,7 @@
                     <div>
                         <!-- Framed Photo with Clean Rounded Corners -->
                         <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5">
-                            <img src="{{ asset('images/entrepreneur.jpg') }}" 
+                            <img src="{{ asset('images/entrepreneur.webp') }}" 
                                  alt="Navodaya Entrepreneurship at Grassroots" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         </div>
@@ -1064,7 +1064,7 @@
                     <div>
                         <!-- Framed Photo with Clean Rounded Corners -->
                         <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5">
-                            <img src="{{ asset('images/mentorship.jpg') }}" 
+                            <img src="{{ asset('images/mentorship.webp') }}" 
                                  alt="Alumni Mentorship Network" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         </div>
@@ -1102,7 +1102,7 @@
                     <div>
                         <!-- Framed Photo with Clean Rounded Corners -->
                         <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5">
-                            <img src="{{ asset('images/education.jpg') }}" 
+                            <img src="{{ asset('images/education.webp') }}" 
                                  alt="Vocational and Technical Skilling in Rural India" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         </div>
