@@ -60,7 +60,7 @@
                         
                         <!-- Clean Bordered Badge -->
                         <div>
-                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-red-600 border border-red-200 bg-red-50/50 uppercase">
+                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
                                 NAVUDYAM FOUNDATION
                             </span>
                         </div>
@@ -114,7 +114,7 @@
                     <div class="w-full sm:max-w-xl lg:max-w-lg space-y-4">
                         
                         <div>
-                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-red-600 border border-red-200 bg-red-50/50 uppercase">
+                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
                                 BUSINESS INCUBATION
                             </span>
                         </div>
@@ -165,7 +165,7 @@
                     <div class="w-full sm:max-w-xl lg:max-w-lg space-y-4">
                         
                         <div>
-                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-red-600 border border-red-200 bg-red-50/50 uppercase">
+                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
                                 ALUMNI MENTORSHIP
                             </span>
                         </div>
@@ -216,7 +216,7 @@
                     <div class="w-full sm:max-w-xl lg:max-w-lg space-y-4">
                         
                         <div>
-                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-red-600 border border-red-200 bg-red-50/50 uppercase">
+                            <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
                                 SCHOLARSHIPS & EDUCATION
                             </span>
                         </div>
@@ -245,28 +245,28 @@
 
         </div>
 
-        <!-- Stable Bottom-Left Pagination Indicator (matching reference image: dot - active red bar - dot) -->
+        <!-- Stable Bottom-Left Pagination Indicator (matching reference image: dot - active bar - dot) -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pb-8 z-30 pointer-events-none">
             <div class="flex items-center gap-2 pointer-events-auto">
                 <button type="button" 
                         @click="goTo(0)" 
                         class="transition-all duration-300 focus:outline-none" 
-                        :class="activeSlide === 0 ? 'w-6 h-2 bg-red-600 rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
+                        :class="activeSlide === 0 ? 'w-6 h-2 bg-logo-yellow rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
                         aria-label="Slide 1"></button>
                 <button type="button" 
                         @click="goTo(1)" 
                         class="transition-all duration-300 focus:outline-none" 
-                        :class="activeSlide === 1 ? 'w-6 h-2 bg-red-600 rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
+                        :class="activeSlide === 1 ? 'w-6 h-2 bg-logo-yellow rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
                         aria-label="Slide 2"></button>
                 <button type="button" 
                         @click="goTo(2)" 
                         class="transition-all duration-300 focus:outline-none" 
-                        :class="activeSlide === 2 ? 'w-6 h-2 bg-red-600 rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
+                        :class="activeSlide === 2 ? 'w-6 h-2 bg-logo-yellow rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
                         aria-label="Slide 3"></button>
                 <button type="button" 
                         @click="goTo(3)" 
                         class="transition-all duration-300 focus:outline-none" 
-                        :class="activeSlide === 3 ? 'w-6 h-2 bg-red-600 rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
+                        :class="activeSlide === 3 ? 'w-6 h-2 bg-logo-yellow rounded-full' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400 rounded-full'" 
                         aria-label="Slide 4"></button>
             </div>
         </div>
@@ -564,16 +564,7 @@
 
             </div>
 
-            <!-- Callout Bar (Clean, rounded-2xl) -->
-            <div class="mt-12 bg-navy-900/80 rounded-2xl p-7 border border-amber-400/30 flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="space-y-1 text-center md:text-left">
-                    <h3 class="text-lg font-bold text-white">Want to start a service center in your town?</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm">We provide machine connections, training, and mentor support to get you started.</p>
-                </div>
-                <a href="#inquiry" class="px-7 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md hover:shadow-lg whitespace-nowrap">
-                    Talk to Our Team
-                </a>
-            </div>
+
 
         </div>
     </section>
