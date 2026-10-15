@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Slider Section (Clean, Professional, Left-Side Content with Soft Fade to Photography on Right) -->
-    <section x-data="{
+    <section id="home" x-data="{
         activeSlide: 0,
         totalSlides: 4,
         timer: null,
@@ -282,82 +282,90 @@
         <!-- Scrolling Marquee Track -->
         <div class="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap">
             <!-- Set 1 -->
-            <div class="flex items-center gap-8 sm:gap-12 px-4 sm:px-6 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 font-heading">
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    660+ Jawahar Navodaya Vidyalayas
+            <div class="flex items-center gap-8 sm:gap-10 px-4 sm:px-6 text-xs sm:text-sm whitespace-nowrap">
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">660+ JNV Schools</strong>
+                    <span class="text-slate-500 font-normal">— Connecting alumni & student talent across 28 states</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    From Skills to Enterprise
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Cohort 2026 Admissions Open</strong>
+                    <span class="text-slate-500 font-normal">— Fully funded enterprise incubation & skills training</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Alumni Mentorship Across 14+ Countries
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">1,200+ Senior Mentors</strong>
+                    <span class="text-slate-500 font-normal">— 1-on-1 guidance from founders & global leaders</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Grassroots Business Incubation
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Commercial Laundry Hubs</strong>
+                    <span class="text-slate-500 font-normal">— Launching modern service enterprises in small towns</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Women Micro-Enterprises
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Zero-Collateral Seed Support</strong>
+                    <span class="text-slate-500 font-normal">— Direct machinery connects & working capital access</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Commercial Laundry & Service Hubs
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Women Micro-Enterprises</strong>
+                    <span class="text-slate-500 font-normal">— Scaling self-help groups into sustainable village ventures</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Zero-Collateral Seed Support
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">NavoShiksha Digital Labs</strong>
+                    <span class="text-slate-500 font-normal">— Practical market skills & hands-on equipment training</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    NavoShiksha Innovation Labs
-                </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Rural Youth Job Creation
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">10,000+ Rural Job Creators</strong>
+                    <span class="text-slate-500 font-normal">— Creating economic independence at the grassroots</span>
                 </span>
             </div>
 
             <!-- Set 2 (Identical duplicate for seamless infinite loop) -->
-            <div class="flex items-center gap-8 sm:gap-12 px-4 sm:px-6 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 font-heading" aria-hidden="true">
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    660+ Jawahar Navodaya Vidyalayas
+            <div class="flex items-center gap-8 sm:gap-10 px-4 sm:px-6 text-xs sm:text-sm whitespace-nowrap" aria-hidden="true">
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">660+ JNV Schools</strong>
+                    <span class="text-slate-500 font-normal">— Connecting alumni & student talent across 28 states</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    From Skills to Enterprise
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Cohort 2026 Admissions Open</strong>
+                    <span class="text-slate-500 font-normal">— Fully funded enterprise incubation & skills training</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Alumni Mentorship Across 14+ Countries
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">1,200+ Senior Mentors</strong>
+                    <span class="text-slate-500 font-normal">— 1-on-1 guidance from founders & global leaders</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Grassroots Business Incubation
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Commercial Laundry Hubs</strong>
+                    <span class="text-slate-500 font-normal">— Launching modern service enterprises in small towns</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Women Micro-Enterprises
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Zero-Collateral Seed Support</strong>
+                    <span class="text-slate-500 font-normal">— Direct machinery connects & working capital access</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Commercial Laundry & Service Hubs
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">Women Micro-Enterprises</strong>
+                    <span class="text-slate-500 font-normal">— Scaling self-help groups into sustainable village ventures</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Zero-Collateral Seed Support
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">NavoShiksha Digital Labs</strong>
+                    <span class="text-slate-500 font-normal">— Practical market skills & hands-on equipment training</span>
                 </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    NavoShiksha Innovation Labs
-                </span>
-                <span class="flex items-center gap-2.5">
-                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs"></span>
-                    Rural Youth Job Creation
+                <span class="inline-flex items-center gap-2.5">
+                    <span class="w-2 h-2 rounded-full bg-logo-yellow shadow-xs shrink-0"></span>
+                    <strong class="font-bold text-navy-950 font-heading">10,000+ Rural Job Creators</strong>
+                    <span class="text-slate-500 font-normal">— Creating economic independence at the grassroots</span>
                 </span>
             </div>
         </div>
@@ -397,7 +405,8 @@
     </section>
 
     <!-- Who We Are / Navodaya Ethos (Simple, Warm, Human Narrative) -->
-    <section id="mission" class="py-16 lg:py-20 bg-[#FCFAF7] border-b border-amber-100/70">
+    <section id="about-us" class="scroll-mt-24 py-16 lg:py-20 bg-[#FCFAF7] border-b border-amber-100/70">
+        <div id="mission" class="scroll-mt-24"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
@@ -461,7 +470,8 @@
     </section>
 
     <!-- The 4 Core Focus Pillars (Clean, rounded-2xl, lighter welcoming shades) -->
-    <section id="pillars" class="py-16 lg:py-20 bg-white border-b border-slate-200/70">
+    <section id="initiatives" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
+        <div id="pillars" class="scroll-mt-24"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Section Header -->
@@ -871,10 +881,97 @@
         </div>
     </section>
 
-  
+    <!-- Events & Sessions Section (Clean, Modern, Uncluttered) -->
+    <section id="events" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-2">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-950 tracking-tight font-heading">
+                    Upcoming Events & Sessions
+                </h2>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md mx-auto">
+                    Join our live workshops, orientation webinars, and alumni meetups.
+                </p>
+            </div>
+
+            <!-- Events Grid (3 Clean Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Event 1 -->
+                <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-amber-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Online Webinar</span>
+                            <span class="text-xs text-slate-400 font-medium">Nov 15, 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-950 font-heading leading-snug group-hover:text-amber-600 transition-colors">
+                            Navudyam Cohort 2026: Application Orientation & AMA
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Live walkthrough of the application process, selection criteria, seed funding details, and mentorship support.
+                        </p>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
+                        <span class="text-xs text-slate-500 font-medium">6:00 PM – 7:30 PM IST</span>
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-amber-600 inline-flex items-center gap-1 transition-colors cursor-pointer">
+                            Register Free →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-emerald-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Virtual Meetup</span>
+                            <span class="text-xs text-slate-400 font-medium">Nov 28, 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-950 font-heading leading-snug group-hover:text-emerald-700 transition-colors">
+                            Alumni Mentorship Circle: From College to First Venture
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Senior Navodaya alumni founders share their journey of launching commercial enterprises right after graduation.
+                        </p>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
+                        <span class="text-xs text-slate-500 font-medium">5:30 PM – 7:00 PM IST</span>
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-emerald-700 inline-flex items-center gap-1 transition-colors cursor-pointer">
+                            Register Free →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-sky-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-sky-700">In-Person Workshop</span>
+                            <span class="text-xs text-slate-400 font-medium">Dec 10, 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-950 font-heading leading-snug group-hover:text-sky-700 transition-colors">
+                            Grassroots Service Hub Setup: Machines, Vendors & Contracts
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Practical, hands-on workshop in Wardha for aspiring entrepreneurs looking to set up commercial laundry hubs.
+                        </p>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
+                        <span class="text-xs text-slate-500 font-medium">Wardha, Maharashtra</span>
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-sky-700 inline-flex items-center gap-1 transition-colors cursor-pointer">
+                            RSVP Spot →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- Navodayan Community Banner (The Soul & Brotherhood of Navodaya) -->
-    <section id="community" class="py-16 bg-navy-950 text-white relative">
+    <section id="contact" class="scroll-mt-24 py-16 bg-navy-950 text-white relative">
+        <div id="community" class="scroll-mt-24"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
@@ -905,17 +1002,18 @@
         </div>
     </section>
 
-      <!-- Blog & Insights Section (Clean, Uncluttered, No Badges) -->
-    <section id="blog" class="scroll-mt-24 py-16 lg:py-24 bg-[#FAF9F5]/70 border-b border-slate-200/70">
+    <!-- Stories & Resources Section (Clean, Uncluttered, No Badges) -->
+    <section id="resources" class="scroll-mt-24 py-16 lg:py-24 bg-[#FAF9F5]/70 border-b border-slate-200/70">
+        <div id="blog" class="scroll-mt-24"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Section Header: Clean, Simple, No Badges -->
             <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-2">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-950 tracking-tight font-heading">
-                    Insights & Grassroots News
+                    Stories & Resources
                 </h2>
                 <p class="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
-                    Articles, field learnings, and stories of enterprise building across Navodaya alumni and rural communities.
+                    Field learnings, enterprise case studies, and practical guides from across the Navodaya community.
                 </p>
             </div>
 

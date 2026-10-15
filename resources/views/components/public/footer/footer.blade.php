@@ -39,19 +39,19 @@
                 </h4>
                 <ul class="space-y-2 text-xs sm:text-sm">
                     <li>
-                        <a href="#mission" class="text-slate-400 hover:text-amber-400 transition-colors">Who We Are</a>
+                        <a href="#home" class="text-slate-400 hover:text-amber-400 transition-colors">Home</a>
                     </li>
                     <li>
-                        <a href="#pillars" class="text-slate-400 hover:text-amber-400 transition-colors">Our Pillars</a>
+                        <a href="#about-us" class="text-slate-400 hover:text-amber-400 transition-colors">About Us</a>
                     </li>
                     <li>
-                        <a href="#model" class="text-slate-400 hover:text-amber-400 transition-colors">The 4-Step Model</a>
+                        <a href="#initiatives" class="text-slate-400 hover:text-amber-400 transition-colors">Our Initiatives</a>
                     </li>
                     <li>
-                        <a href="#videos" class="text-slate-400 hover:text-amber-400 transition-colors">Stories in Motion</a>
+                        <a href="#blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog</a>
                     </li>
                     <li>
-                        <a href="#blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog & Insights</a>
+                        <a href="#contact" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>
                     </li>
                 </ul>
             </div>
