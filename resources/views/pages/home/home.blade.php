@@ -871,7 +871,41 @@
         </div>
     </section>
 
-    <!-- Blog & Insights Section (Clean, Uncluttered, No Badges) -->
+  
+
+    <!-- Navodayan Community Banner (The Soul & Brotherhood of Navodaya) -->
+    <section id="community" class="py-16 bg-navy-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400 block">
+                        NAVDARSHAN • THE ALUMNI PLEDGE
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
+                        Are You a Navodayan? <br class="hidden sm:inline" />
+                        Bring Your Expertise Back to the Family.
+                    </h2>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+                        No matter which Jawahar Navodaya Vidyalaya you graduated from, or which corner of the world you lead in — your insights, time, and mentorship can turn an aspiring student into tomorrow's enterprise founder.
+                    </p>
+                </div>
+                <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+                    <button @click="$dispatch('open-inquiry-modal')" 
+                            type="button"
+                            class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer">
+                        Connect with Alumni Network
+                    </button>
+                    <button @click="$dispatch('open-inquiry-modal')" 
+                            type="button"
+                            class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-white bg-navy-800 hover:bg-navy-700 border border-navy-700 rounded-full transition-all shadow-sm cursor-pointer">
+                        Explore Local Chapters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Blog & Insights Section (Clean, Uncluttered, No Badges) -->
     <section id="blog" class="scroll-mt-24 py-16 lg:py-24 bg-[#FAF9F5]/70 border-b border-slate-200/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -1004,38 +1038,6 @@
 
             </div>
 
-        </div>
-    </section>
-
-    <!-- Navodayan Community Banner (The Soul & Brotherhood of Navodaya) -->
-    <section id="community" class="py-16 bg-navy-950 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400 block">
-                        NAVDARSHAN • THE ALUMNI PLEDGE
-                    </span>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
-                        Are You a Navodayan? <br class="hidden sm:inline" />
-                        Bring Your Expertise Back to the Family.
-                    </h2>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-                        No matter which Jawahar Navodaya Vidyalaya you graduated from, or which corner of the world you lead in — your insights, time, and mentorship can turn an aspiring student into tomorrow's enterprise founder.
-                    </p>
-                </div>
-                <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-                    <button @click="$dispatch('open-inquiry-modal')" 
-                            type="button"
-                            class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer">
-                        Connect with Alumni Network
-                    </button>
-                    <button @click="$dispatch('open-inquiry-modal')" 
-                            type="button"
-                            class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-white bg-navy-800 hover:bg-navy-700 border border-navy-700 rounded-full transition-all shadow-sm cursor-pointer">
-                        Explore Local Chapters
-                    </button>
-                </div>
-            </div>
         </div>
     </section>
 
