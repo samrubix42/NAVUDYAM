@@ -38,7 +38,7 @@
                         <a href="{{ route('events') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Events</a>
                     </li>
                     <li>
-                        <a href="#resources" class="text-slate-400 hover:text-amber-400 transition-colors">Stories & Resources</a>
+                        <a href="{{ route('stories') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Stories & Resources</a>
                     </li>
                     <li>
                         <a href="{{ route('contact') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>

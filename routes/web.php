@@ -9,6 +9,7 @@ Route::livewire('/', 'pages::home')->name('home');
 Route::livewire('/about', 'pages::about')->name('about');
 Route::livewire('/initiatives', 'pages::initiatives')->name('initiatives');
 Route::livewire('/events', 'pages::events')->name('events');
+Route::livewire('/stories', 'pages::stories')->name('stories');
 Route::livewire('/contact', 'pages::contact')->name('contact');
 
 // Auth Portal (Guest Only)
