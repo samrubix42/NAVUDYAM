@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Route;
 // Public Website
 Route::livewire('/', 'pages::home')->name('home');
 Route::livewire('/about', 'pages::about')->name('about');
+Route::livewire('/initiatives', 'pages::initiatives')->name('initiatives');
+Route::livewire('/events', 'pages::events')->name('events');
+Route::livewire('/contact', 'pages::contact')->name('contact');
 
 // Auth Portal (Guest Only)
 Route::middleware('guest')->group(function () {

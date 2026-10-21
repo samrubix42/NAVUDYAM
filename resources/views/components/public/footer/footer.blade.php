@@ -32,16 +32,16 @@
                         <a href="{{ route('about') }}" class="text-slate-400 hover:text-amber-400 transition-colors">About Us</a>
                     </li>
                     <li>
-                        <a href="#initiatives" class="text-slate-400 hover:text-amber-400 transition-colors">Our Initiatives</a>
+                        <a href="{{ route('initiatives') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Our Initiatives</a>
                     </li>
                     <li>
-                        <a href="#events" class="text-slate-400 hover:text-amber-400 transition-colors">Events</a>
+                        <a href="{{ route('events') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Events</a>
                     </li>
                     <li>
                         <a href="#resources" class="text-slate-400 hover:text-amber-400 transition-colors">Stories & Resources</a>
                     </li>
                     <li>
-                        <a href="#contact" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>
+                        <a href="{{ route('contact') }}" class="text-slate-400 hover:text-amber-400 transition-colors">Contact</a>
                     </li>               
                 </ul>
             </div>

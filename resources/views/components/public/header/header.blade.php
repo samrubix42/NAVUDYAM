@@ -37,9 +37,9 @@
                 <span class="hidden lg:inline text-navy-800">|</span>
                 <a href="#impact" class="hover:text-logo-yellow transition-colors">Our Impact</a>
                 <span class="text-navy-800">|</span>
-                <button @click="$dispatch('open-inquiry-modal')" type="button" class="hover:text-logo-yellow transition-colors cursor-pointer">
+                <a href="{{ route('contact') }}" class="hover:text-logo-yellow transition-colors">
                     Contact Us
-                </button>
+                </a>
             
             </div>
         </div>
@@ -63,16 +63,16 @@
                 <a href="{{ route('about') }}" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     About Us
                 </a>
-                <a href="#initiatives" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                <a href="{{ route('initiatives') }}" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Our Initiatives
                 </a>
-                <a href="#events" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                <a href="{{ route('events') }}" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Events
                 </a>
                 <a href="#resources" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Stories & Resources
                 </a>
-                <a href="#contact" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
+                <a href="{{ route('contact') }}" class="hover:text-navy-900 font-semibold transition-colors py-2 border-b-2 border-transparent hover:border-amber-500">
                     Contact
                 </a>
             </nav>
@@ -119,10 +119,10 @@
         <div class="flex flex-col space-y-2 text-base font-medium text-slate-800">
             <a href="#home" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Home</a>
             <a href="{{ route('about') }}" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">About Us</a>
-            <a href="#initiatives" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Our Initiatives</a>
-            <a href="#events" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Events</a>
+            <a href="{{ route('initiatives') }}" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Our Initiatives</a>
+            <a href="{{ route('events') }}" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Events</a>
             <a href="#resources" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Stories & Resources</a>
-            <a href="#contact" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Contact</a>
+            <a href="{{ route('contact') }}" @click="mobileMenuOpen = false" class="px-3 py-2 rounded-md hover:bg-slate-50 hover:text-navy-900">Contact</a>
         </div>
         <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
             <button @click="mobileMenuOpen = false; $dispatch('open-inquiry-modal')" 
