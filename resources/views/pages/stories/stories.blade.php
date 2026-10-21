@@ -1,4 +1,5 @@
 <div x-data="{ activeStory: null }"
+     x-effect="document.body.style.overflow = activeStory ? 'hidden' : ''"
      @keydown.escape.window="activeStory = null">
 
     <!-- Stories Hero Banner (matching site hero pattern) -->
@@ -88,10 +89,10 @@
          x-transition:leave="transition ease-in duration-200"
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0"
-         class="fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-6 bg-navy-950/85 backdrop-blur-md overflow-y-auto">
+         class="fixed inset-0 z-50 overflow-y-auto bg-navy-950/85 backdrop-blur-md p-4 sm:p-6">
 
         <div @click.outside="activeStory = null"
-             class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl my-8 max-h-[90vh] overflow-y-auto">
+             class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl my-6 sm:my-10 mx-auto">
 
             <!-- Close Button -->
             <button @click="activeStory = null"

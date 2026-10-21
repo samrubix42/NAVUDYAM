@@ -836,6 +836,7 @@
         <!-- YouTube Video Lightbox Modal (Autoplay, Esc/Outside click to dismiss) -->
         <div x-show="activeVideo" 
              x-cloak
+             x-effect="document.body.style.overflow = activeVideo ? 'hidden' : ''"
              x-transition:enter="transition ease-out duration-300"
              x-transition:enter-start="opacity-0"
              x-transition:enter-end="opacity-100"
@@ -843,10 +844,10 @@
              x-transition:leave-start="opacity-100"
              x-transition:leave-end="opacity-0"
              @keydown.escape.window="closeModal()"
-             class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-navy-950/85 backdrop-blur-md">
+             class="fixed inset-0 z-50 overflow-y-auto bg-navy-950/85 backdrop-blur-md p-4 sm:p-6">
             
             <div @click.outside="closeModal()" 
-                 class="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                 class="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10 my-6 sm:my-10 mx-auto">
                 
                 <!-- Close Button -->
                 <button @click="closeModal()" 
@@ -1158,6 +1159,7 @@
 
     <!-- Get Involved Modal (Triggered on click of header 'Get Involved', footer, or page CTAs) -->
     <div x-data="{ inquiryModalOpen: false }"
+         x-effect="document.body.style.overflow = inquiryModalOpen ? 'hidden' : ''"
          @open-inquiry-modal.window="inquiryModalOpen = true"
          @close-inquiry-modal.window="inquiryModalOpen = false"
          @keydown.escape.window="inquiryModalOpen = false">
@@ -1170,10 +1172,10 @@
              x-transition:leave="transition ease-in duration-200"
              x-transition:leave-start="opacity-100"
              x-transition:leave-end="opacity-0"
-             class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-navy-950/80 backdrop-blur-md overflow-y-auto">
+             class="fixed inset-0 z-50 overflow-y-auto bg-navy-950/85 backdrop-blur-md p-4 sm:p-6">
             
             <div @click.outside="inquiryModalOpen = false"
-                 class="relative w-full max-w-2xl bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-100 my-8 max-h-[90vh] overflow-y-auto">
+                 class="relative w-full max-w-2xl bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-100 my-6 sm:my-10 mx-auto">
                 
                 <!-- Close Button -->
                 <button @click="inquiryModalOpen = false" 
