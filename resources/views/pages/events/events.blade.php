@@ -41,6 +41,11 @@
                 <!-- Event 1 -->
                 <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-amber-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
+                        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/education.webp') }}"
+                                 alt="Navudyam cohort orientation webinar"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        </div>
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Online Webinar</span>
                             <span class="text-xs text-slate-400 font-medium">Nov 15, 2026</span>
@@ -69,6 +74,11 @@
                 <!-- Event 2 -->
                 <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-emerald-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
+                        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/mentorship.webp') }}"
+                                 alt="Alumni mentorship circle meetup"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        </div>
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Virtual Meetup</span>
                             <span class="text-xs text-slate-400 font-medium">Nov 28, 2026</span>
@@ -97,6 +107,11 @@
                 <!-- Event 3 -->
                 <div class="bg-[#FAF9F5] rounded-3xl p-6 border border-slate-200/80 hover:border-sky-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
+                        <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/entrepreneur.webp') }}"
+                                 alt="Hands-on service hub setup workshop in Wardha"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        </div>
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold uppercase tracking-wider text-sky-700">In-Person Workshop</span>
                             <span class="text-xs text-slate-400 font-medium">Dec 10, 2026</span>
