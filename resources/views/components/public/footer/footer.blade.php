@@ -29,7 +29,7 @@
                         <a href="#home" class="text-slate-400 hover:text-amber-400 transition-colors">Home</a>
                     </li>
                     <li>
-                        <a href="#about-us" class="text-slate-400 hover:text-amber-400 transition-colors">About Us</a>
+                        <a href="{{ route('about') }}" class="text-slate-400 hover:text-amber-400 transition-colors">About Us</a>
                     </li>
                     <li>
                         <a href="#initiatives" class="text-slate-400 hover:text-amber-400 transition-colors">Our Initiatives</a>
