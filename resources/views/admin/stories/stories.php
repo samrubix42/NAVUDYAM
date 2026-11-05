@@ -123,7 +123,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
             $this->is_active = (bool) $story->is_active;
             $this->isEditing = true;
             $this->showModal = true;
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->dispatch('toast', [
                 'message' => 'Story not found: '.$e->getMessage(),
                 'type' => 'error',
@@ -212,7 +212,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
             }
 
             $this->closeModal();
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->dispatch('toast', [
                 'message' => 'Could not save story: '.$e->getMessage(),
                 'type' => 'error',
@@ -237,7 +237,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
                 'type' => $story->is_active ? 'success' : 'info',
                 'title' => 'Status Updated',
             ]);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->dispatch('toast', [
                 'message' => 'Could not update status: '.$e->getMessage(),
                 'type' => 'error',
@@ -256,7 +256,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
             $this->deletingStoryId = $story->id;
             $this->deletingStoryTitle = $story->title;
             $this->showDeleteModal = true;
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->dispatch('toast', [
                 'message' => 'Story not found: '.$e->getMessage(),
                 'type' => 'error',
@@ -302,7 +302,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
             }
 
             $this->cancelDelete();
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->dispatch('toast', [
                 'message' => 'Could not delete story: '.$e->getMessage(),
                 'type' => 'error',
@@ -322,7 +322,7 @@ return new #[Layout('layouts::admin')] #[Title('Stories | NAVUDYAM Admin')] clas
             $search = trim($this->search);
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%'.$search.'%')
-                  ->orWhere('description', 'like', '%'.$search.'%');
+                    ->orWhere('description', 'like', '%'.$search.'%');
             });
         }
 

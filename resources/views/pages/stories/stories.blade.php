@@ -92,7 +92,7 @@
 
                         <div>
                             <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5">
-                                <img src="{{ asset($story['image']) }}"
+                                <img src="{{ Str::startsWith($story['image'], ['http://', 'https://']) ? $story['image'] : asset($story['image']) }}"
                                      alt="{{ $story['alt'] ?? $story['title'] }}"
                                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                             </div>
