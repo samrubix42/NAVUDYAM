@@ -27,7 +27,7 @@
                 <div class="pt-2">
                     <a href="#share-story" class="inline-flex items-center gap-2 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-colors shadow-xs">
                         <span>Share Your Story</span>
-                        <span>&darr;</span>
+                        <i class="ri-arrow-down-line text-sm"></i>
                     </a>
                 </div>
             </div>
@@ -113,10 +113,8 @@
 
                         <div class="pt-5 flex items-center text-xs sm:text-sm font-semibold text-navy-950 group-hover:text-amber-600 transition-colors">
                             <span class="inline-flex items-center gap-1.5">
-                                Read Full Story
-                                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                                </svg>
+                                <span>Read Full Story</span>
+                                <i class="ri-arrow-right-line text-sm transition-transform group-hover:translate-x-1"></i>
                             </span>
                         </div>
                     </article>
@@ -146,9 +144,7 @@
                     type="button"
                     class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/50 hover:bg-black text-white flex items-center justify-center transition-all hover:scale-105 focus:outline-none"
                     aria-label="Close story">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
+                <i class="ri-close-line text-2xl text-white"></i>
             </button>
 
             <!-- Cover Image -->
@@ -205,7 +201,7 @@
 
                 <!-- Consent & Review Notice -->
                 <div class="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-xs text-slate-700 max-w-xl mx-auto text-left flex items-start gap-3">
-                    <span class="text-amber-800 text-base">🛡️</span>
+                    <i class="ri-shield-check-line text-amber-800 text-xl shrink-0 mt-0.5"></i>
                     <p class="leading-relaxed">
                         <strong>Editorial Integrity & Consent:</strong> Every story submitted goes through collaborative review. We work closely with you to finalize drafts, and nothing is published without your written consent.
                     </p>

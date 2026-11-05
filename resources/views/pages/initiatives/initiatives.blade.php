@@ -60,8 +60,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-sky-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Pillar &rarr;
+                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Pillar</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </span>
                     </div>
                 </a>
@@ -85,8 +86,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-amber-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Pillar &rarr;
+                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-amber-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Pillar</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </span>
                     </div>
                 </a>
@@ -110,8 +112,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-emerald-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Pillar &rarr;
+                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Pillar</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </span>
                     </div>
                 </a>
@@ -135,8 +138,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-indigo-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Pillar &rarr;
+                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-indigo-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Pillar</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </span>
                     </div>
                 </a>
@@ -160,8 +164,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-rose-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Pillar &rarr;
+                        <span class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-rose-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Pillar</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </span>
                     </div>
                 </a>
@@ -198,10 +203,10 @@
                     </p>
 
                     <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-sky-600 font-bold">✓</span> Encouraging practical and technical learning tracks</li>
-                        <li class="flex items-center gap-2"><span class="text-sky-600 font-bold">✓</span> Foundational digital literacy and computer tools</li>
-                        <li class="flex items-center gap-2"><span class="text-sky-600 font-bold">✓</span> Career awareness conversations and pathfinding</li>
-                        <li class="flex items-center gap-2"><span class="text-sky-600 font-bold">✓</span> Open learning resources and study circles</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-sky-600 font-bold text-sm"></i> Encouraging practical and technical learning tracks</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-sky-600 font-bold text-sm"></i> Foundational digital literacy and computer tools</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-sky-600 font-bold text-sm"></i> Career awareness conversations and pathfinding</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-sky-600 font-bold text-sm"></i> Open learning resources and study circles</li>
                     </ul>
 
                     <div class="pt-2">
@@ -239,10 +244,10 @@
                     </p>
 
                     <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-amber-600 font-bold">✓</span> 1-on-1 conversations with experienced professionals</li>
-                        <li class="flex items-center gap-2"><span class="text-amber-600 font-bold">✓</span> Leadership development and professional coaching</li>
-                        <li class="flex items-center gap-2"><span class="text-amber-600 font-bold">✓</span> Career path exploration for students and early professionals</li>
-                        <li class="flex items-center gap-2"><span class="text-amber-600 font-bold">✓</span> 'Give One Hour' micro-mentoring program for volunteers</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-amber-600 font-bold text-sm"></i> 1-on-1 conversations with experienced professionals</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-amber-600 font-bold text-sm"></i> Leadership development and professional coaching</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-amber-600 font-bold text-sm"></i> Career path exploration for students and early professionals</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-amber-600 font-bold text-sm"></i> 'Give One Hour' micro-mentoring program for volunteers</li>
                     </ul>
 
                     <div class="pt-2">
@@ -292,10 +297,10 @@
                     </p>
 
                     <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Grounded idea evaluation and local market feasibility</li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Operational fundamentals: accounts, compliance and customer relations</li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Knowledge sharing across existing small business founders</li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> The Udyam Idea Wall for community-driven initiatives</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-600 font-bold text-sm"></i> Grounded idea evaluation and local market feasibility</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-600 font-bold text-sm"></i> Operational fundamentals: accounts, compliance and customer relations</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-600 font-bold text-sm"></i> Knowledge sharing across existing small business founders</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-600 font-bold text-sm"></i> The Udyam Idea Wall for community-driven initiatives</li>
                     </ul>
 
                     <div class="pt-2">
@@ -342,10 +347,10 @@
                     </div>
 
                     <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-indigo-600 font-bold">✓</span> Commercial laundry equipment awareness and technical processes</li>
-                        <li class="flex items-center gap-2"><span class="text-indigo-600 font-bold">✓</span> Fabric care, hygiene standards, and modern eco-friendly washing methods</li>
-                        <li class="flex items-center gap-2"><span class="text-indigo-600 font-bold">✓</span> Service center setup, unit economics, and operational workflow design</li>
-                        <li class="flex items-center gap-2"><span class="text-indigo-600 font-bold">✓</span> Professional storytelling through Between Steam & Dreams®</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-indigo-600 font-bold text-sm"></i> Commercial laundry equipment awareness and technical processes</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-indigo-600 font-bold text-sm"></i> Fabric care, hygiene standards, and modern eco-friendly washing methods</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-indigo-600 font-bold text-sm"></i> Service center setup, unit economics, and operational workflow design</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-indigo-600 font-bold text-sm"></i> Professional storytelling through Between Steam & Dreams®</li>
                     </ul>
 
                     <div class="pt-2">
@@ -395,10 +400,10 @@
                     </p>
 
                     <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-rose-600 font-bold">✓</span> Community-led volunteering and local outreach</li>
-                        <li class="flex items-center gap-2"><span class="text-rose-600 font-bold">✓</span> Multi-disciplinary professional networking</li>
-                        <li class="flex items-center gap-2"><span class="text-rose-600 font-bold">✓</span> Collaborative social initiatives and problem-solving</li>
-                        <li class="flex items-center gap-2"><span class="text-rose-600 font-bold">✓</span> Inclusive regional chapters and community dialogues</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-rose-600 font-bold text-sm"></i> Community-led volunteering and local outreach</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-rose-600 font-bold text-sm"></i> Multi-disciplinary professional networking</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-rose-600 font-bold text-sm"></i> Collaborative social initiatives and problem-solving</li>
+                        <li class="flex items-center gap-2"><i class="ri-check-line text-rose-600 font-bold text-sm"></i> Inclusive regional chapters and community dialogues</li>
                     </ul>
 
                     <div class="pt-2">
@@ -433,7 +438,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
 
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">01</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">01</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-compass-3-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">DISCOVER</span>
                     <h3 class="text-lg font-bold text-white mb-2">Explore Purpose</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -442,7 +452,12 @@
                 </div>
 
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-emerald-400/50 transition-all duration-200">
-                    <div class="text-emerald-400 font-extrabold text-2xl mb-2 font-heading">02</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-emerald-400 font-extrabold text-2xl font-heading">02</span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+                            <i class="ri-team-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-300 block mb-1">CONNECT</span>
                     <h3 class="text-lg font-bold text-white mb-2">Say Hello</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -451,7 +466,12 @@
                 </div>
 
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-sky-400/50 transition-all duration-200">
-                    <div class="text-sky-400 font-extrabold text-2xl mb-2 font-heading">03</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sky-400 font-extrabold text-2xl font-heading">03</span>
+                        <div class="w-10 h-10 rounded-xl bg-sky-400/10 text-sky-400 flex items-center justify-center">
+                            <i class="ri-hand-coin-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-sky-300 block mb-1">CONTRIBUTE</span>
                     <h3 class="text-lg font-bold text-white mb-2">Share or Learn</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -460,7 +480,12 @@
                 </div>
 
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">04</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">04</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-plant-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">GROW TOGETHER</span>
                     <h3 class="text-lg font-bold text-white mb-2">Build Futures</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">

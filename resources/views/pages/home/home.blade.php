@@ -316,7 +316,7 @@
                         <!-- Combined Meaning Statement -->
                         <div class="md:col-span-2 p-4 sm:p-5 rounded-2xl bg-navy-950 text-white flex flex-col sm:flex-row items-center gap-4">
                             <div class="w-10 h-10 rounded-xl bg-amber-400 text-navy-950 font-bold flex items-center justify-center shrink-0">
-                                💡
+                                <i class="ri-lightbulb-flash-line text-lg text-navy-950"></i>
                             </div>
                             <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-center sm:text-left">
                                 <strong>Together, NAVUDYAM</strong> reflects our core conviction that knowledge, effort and connections can create fresh opportunities for everyone.
@@ -505,7 +505,7 @@
                         <a href="{{ route('about') }}" 
                            class="inline-flex items-center gap-1.5 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-colors shadow-xs">
                             <span>Read Full Story</span>
-                            <span>&rarr;</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                         <button @click="$dispatch('open-inquiry-modal')" 
                                 type="button"
@@ -559,8 +559,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <a href="{{ route('initiatives') }}#education" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-sky-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Education Pillar →
+                        <a href="{{ route('initiatives') }}#education" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Education Pillar</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -583,8 +584,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <a href="{{ route('initiatives') }}#mentorship" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-amber-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Mentorship Pillar →
+                        <a href="{{ route('initiatives') }}#mentorship" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-amber-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Mentorship Pillar</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -607,8 +609,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <a href="{{ route('initiatives') }}#entrepreneurship" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-emerald-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Entrepreneurship Pillar →
+                        <a href="{{ route('initiatives') }}#entrepreneurship" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Entrepreneurship Pillar</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -631,8 +634,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <a href="{{ route('initiatives') }}#allied-industry" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-indigo-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Industry Pillar →
+                        <a href="{{ route('initiatives') }}#allied-industry" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-indigo-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Industry Pillar</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -655,8 +659,9 @@
                         </p>
                     </div>
                     <div class="pt-5 border-t border-slate-100 mt-5">
-                        <a href="{{ route('initiatives') }}#community" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-rose-700 inline-flex items-center gap-1 transition-colors">
-                            Explore Community Pillar →
+                        <a href="{{ route('initiatives') }}#community" class="text-xs font-bold uppercase tracking-wider text-navy-900 group-hover:text-rose-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Explore Community Pillar</span>
+                            <i class="ri-arrow-right-line text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -686,7 +691,12 @@
                 
                 <!-- Stage 1 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">01</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">01</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-compass-3-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">STAGE 1</span>
                     <h3 class="text-lg font-bold text-white mb-2">Discover</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -696,7 +706,12 @@
 
                 <!-- Stage 2 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-emerald-400/50 transition-all duration-200">
-                    <div class="text-emerald-400 font-extrabold text-2xl mb-2 font-heading">02</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-emerald-400 font-extrabold text-2xl font-heading">02</span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+                            <i class="ri-team-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-300 block mb-1">STAGE 2</span>
                     <h3 class="text-lg font-bold text-white mb-2">Connect</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -706,7 +721,12 @@
 
                 <!-- Stage 3 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-sky-400/50 transition-all duration-200">
-                    <div class="text-sky-400 font-extrabold text-2xl mb-2 font-heading">03</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sky-400 font-extrabold text-2xl font-heading">03</span>
+                        <div class="w-10 h-10 rounded-xl bg-sky-400/10 text-sky-400 flex items-center justify-center">
+                            <i class="ri-hand-coin-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-sky-300 block mb-1">STAGE 3</span>
                     <h3 class="text-lg font-bold text-white mb-2">Contribute</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -716,7 +736,12 @@
 
                 <!-- Stage 4 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">04</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">04</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-plant-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">STAGE 4</span>
                     <h3 class="text-lg font-bold text-white mb-2">Grow Together</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -759,7 +784,7 @@
                 <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-lg">
-                            💬
+                            <i class="ri-discuss-line text-xl text-amber-800"></i>
                         </div>
                         <h3 class="font-bold text-navy-950 text-base font-heading">NAVUDYAM Learning Circle</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">
@@ -775,7 +800,7 @@
                 <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-lg">
-                            ⏱️
+                            <i class="ri-time-line text-xl text-emerald-800"></i>
                         </div>
                         <h3 class="font-bold text-navy-950 text-base font-heading">Give One Hour</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">
@@ -783,8 +808,9 @@
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 mt-4">
-                        <button @click="$dispatch('open-inquiry-modal')" class="text-[11px] font-bold text-emerald-700 uppercase hover:underline cursor-pointer">
-                            Volunteer Time &rarr;
+                        <button @click="$dispatch('open-inquiry-modal')" class="text-[11px] font-bold text-emerald-700 uppercase hover:underline inline-flex items-center gap-1 cursor-pointer">
+                            <span>Volunteer Time</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -793,7 +819,7 @@
                 <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="w-10 h-10 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center text-lg">
-                            💡
+                            <i class="ri-lightbulb-line text-xl text-sky-800"></i>
                         </div>
                         <h3 class="font-bold text-navy-950 text-base font-heading">The Udyam Idea Wall</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">
@@ -809,7 +835,7 @@
                 <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="w-10 h-10 rounded-2xl bg-indigo-100 text-indigo-800 flex items-center justify-center text-lg">
-                            📖
+                            <i class="ri-book-open-line text-xl text-indigo-800"></i>
                         </div>
                         <h3 class="font-bold text-navy-950 text-base font-heading">Between Steam & Dreams®</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">
@@ -817,8 +843,9 @@
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 mt-4">
-                        <a href="{{ route('stories') }}" class="text-[11px] font-bold text-indigo-700 uppercase hover:underline">
-                            Read Features &rarr;
+                        <a href="{{ route('stories') }}" class="text-[11px] font-bold text-indigo-700 uppercase hover:underline inline-flex items-center gap-1">
+                            <span>Read Features</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </a>
                     </div>
                 </div>
@@ -868,8 +895,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Planned Program</span>
-                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-amber-600 inline-flex items-center gap-1 transition-colors cursor-pointer">
-                            Receive Updates →
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-amber-600 inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+                            <span>Receive Updates</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -895,8 +923,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Open to All</span>
-                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-emerald-700 inline-flex items-center gap-1 transition-colors cursor-pointer">
-                            Receive Updates →
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+                            <span>Receive Updates</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -922,8 +951,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Planned Discussion</span>
-                        <a href="{{ route('events') }}" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-sky-700 inline-flex items-center gap-1 transition-colors">
-                            Propose an Event →
+                        <a href="{{ route('events') }}" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors">
+                            <span>Propose an Event</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </a>
                     </div>
                 </div>
@@ -979,9 +1009,7 @@
                     <div class="pt-5 flex items-center text-xs sm:text-sm font-semibold text-navy-950 group-hover:text-amber-600 transition-colors">
                         <a href="{{ route('stories') }}" class="inline-flex items-center gap-1.5">
                             <span>Read Full Story</span>
-                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
+                            <i class="ri-arrow-right-line text-sm transition-transform group-hover:translate-x-1"></i>
                         </a>
                     </div>
                 </article>
@@ -1012,9 +1040,7 @@
                     <div class="pt-5 flex items-center text-xs sm:text-sm font-semibold text-navy-950 group-hover:text-emerald-700 transition-colors">
                         <a href="{{ route('stories') }}" class="inline-flex items-center gap-1.5">
                             <span>Read Full Story</span>
-                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
+                            <i class="ri-arrow-right-line text-sm transition-transform group-hover:translate-x-1"></i>
                         </a>
                     </div>
                 </article>
@@ -1045,9 +1071,7 @@
                     <div class="pt-5 flex items-center text-xs sm:text-sm font-semibold text-navy-950 group-hover:text-indigo-700 transition-colors">
                         <a href="{{ route('stories') }}" class="inline-flex items-center gap-1.5">
                             <span>Read Full Story</span>
-                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
+                            <i class="ri-arrow-right-line text-sm transition-transform group-hover:translate-x-1"></i>
                         </a>
                     </div>
                 </article>
@@ -1123,9 +1147,7 @@
                         type="button"
                         class="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-all focus:outline-none"
                         aria-label="Close modal">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                    <i class="ri-close-line text-2xl text-slate-700"></i>
                 </button>
 
                 <!-- Modal Header -->
@@ -1145,7 +1167,7 @@
                 @if($inquirySubmitted)
                     <div class="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
                         <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-xl font-bold">
-                            ✓
+                            <i class="ri-checkbox-circle-fill text-3xl text-emerald-600"></i>
                         </div>
                         <h4 class="text-lg font-bold text-emerald-900 font-heading">Thank You for Connecting!</h4>
                         <p class="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto">

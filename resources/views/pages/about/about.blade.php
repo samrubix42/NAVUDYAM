@@ -68,7 +68,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                         <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
                             <div class="w-8 h-8 rounded-full bg-navy-100 text-navy-900 flex items-center justify-center font-bold text-xs mb-2.5">
-                                01
+                                <i class="ri-user-heart-line text-sm text-navy-900"></i>
                             </div>
                             <h3 class="font-bold text-slate-900 text-sm">Lifelong Friendships</h3>
                             <p class="text-xs text-slate-500 mt-1">Grounding our organization in enduring values of trust and mutual respect.</p>
@@ -76,7 +76,7 @@
 
                         <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
                             <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs mb-2.5">
-                                02
+                                <i class="ri-gift-line text-sm text-emerald-800"></i>
                             </div>
                             <h3 class="font-bold text-slate-900 text-sm">Giving Back</h3>
                             <p class="text-xs text-slate-500 mt-1">Using professional networks and learnings to open doors for emerging talent.</p>
@@ -84,7 +84,7 @@
 
                         <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
                             <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs mb-2.5">
-                                03
+                                <i class="ri-global-line text-sm text-amber-800"></i>
                             </div>
                             <h3 class="font-bold text-slate-900 text-sm">Radical Inclusion</h3>
                             <p class="text-xs text-slate-500 mt-1">Inspired by Navodaya roots, but completely welcoming to people from every background.</p>
@@ -135,7 +135,7 @@
 
             <div class="mt-6 max-w-4xl mx-auto p-5 rounded-2xl bg-navy-950 text-white text-center sm:text-left flex flex-col sm:flex-row items-center gap-4">
                 <div class="w-10 h-10 rounded-xl bg-amber-400 text-navy-950 font-bold flex items-center justify-center shrink-0">
-                    ✨
+                    <i class="ri-sparkling-fill text-lg text-navy-950"></i>
                 </div>
                 <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
                     <strong>Together, NAVUDYAM</strong> reflects our conviction that practical knowledge, shared effort and genuine connections can create fresh opportunities for personal, professional and social growth.
@@ -165,7 +165,7 @@
                 <!-- Mission Card -->
                 <div class="group bg-[#FCFAF7] rounded-3xl p-8 sm:p-10 border border-amber-100 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center mb-6 text-xl">
-                        🎯
+                        <i class="ri-focus-3-line text-2xl text-amber-800"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-navy-950 font-heading tracking-tight mb-3">Our Mission</h3>
                     <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -176,7 +176,7 @@
                 <!-- Vision Card -->
                 <div class="group bg-[#FCFAF7] rounded-3xl p-8 sm:p-10 border border-sky-100 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center mb-6 text-xl">
-                        🔭
+                        <i class="ri-eye-line text-2xl text-sky-800"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-navy-950 font-heading tracking-tight mb-3">Our Vision</h3>
                     <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -209,7 +209,7 @@
                 <!-- Value 1 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-sky-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-900 flex items-center justify-center font-bold text-sm mb-4">
-                        01
+                        <i class="ri-graduation-cap-line text-lg text-sky-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Learn with Purpose</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -220,7 +220,7 @@
                 <!-- Value 2 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-bold text-sm mb-4">
-                        02
+                        <i class="ri-heart-3-line text-lg text-emerald-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Connect with Compassion</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -231,7 +231,7 @@
                 <!-- Value 3 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-amber-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-sm mb-4">
-                        03
+                        <i class="ri-line-chart-line text-lg text-amber-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Grow Together</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -242,7 +242,7 @@
                 <!-- Value 4 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-indigo-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-900 flex items-center justify-center font-bold text-sm mb-4">
-                        04
+                        <i class="ri-shield-check-line text-lg text-indigo-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Integrity & Trust</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -253,7 +253,7 @@
                 <!-- Value 5 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-rose-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-900 flex items-center justify-center font-bold text-sm mb-4">
-                        05
+                        <i class="ri-hand-heart-line text-lg text-rose-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Dignity & Inclusion</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -264,7 +264,7 @@
                 <!-- Value 6 -->
                 <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-purple-300 transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-900 flex items-center justify-center font-bold text-sm mb-4">
-                        06
+                        <i class="ri-gift-2-line text-lg text-purple-900"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Giving Back</h3>
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -296,7 +296,12 @@
 
                 <!-- Milestone 1 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">01</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">01</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-school-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">1991–1998</span>
                     <h3 class="text-base font-bold text-white mb-2">School Friendships</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -306,7 +311,12 @@
 
                 <!-- Milestone 2 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-emerald-400/50 transition-all duration-200">
-                    <div class="text-emerald-400 font-extrabold text-2xl mb-2 font-heading">02</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-emerald-400 font-extrabold text-2xl font-heading">02</span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+                            <i class="ri-briefcase-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-300 block mb-1">DIVERSE PATHWAYS</span>
                     <h3 class="text-base font-bold text-white mb-2">Industry Experience</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -316,7 +326,12 @@
 
                 <!-- Milestone 3 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-sky-400/50 transition-all duration-200">
-                    <div class="text-sky-400 font-extrabold text-2xl mb-2 font-heading">03</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-sky-400 font-extrabold text-2xl font-heading">03</span>
+                        <div class="w-10 h-10 rounded-xl bg-sky-400/10 text-sky-400 flex items-center justify-center">
+                            <i class="ri-lightbulb-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-sky-300 block mb-1">THE SEED OF PURPOSE</span>
                     <h3 class="text-base font-bold text-white mb-2">The Idea Takes Form</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -326,7 +341,12 @@
 
                 <!-- Milestone 4 -->
                 <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
-                    <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">04</div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 font-extrabold text-2xl font-heading">04</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center">
+                            <i class="ri-rocket-2-line text-xl"></i>
+                        </div>
+                    </div>
                     <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">TODAY & FORWARD</span>
                     <h3 class="text-base font-bold text-white mb-2">Open to Everyone</h3>
                     <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">

@@ -73,8 +73,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Planned Opportunity</span>
-                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-amber-600 inline-flex items-center gap-1 transition-colors cursor-pointer">
-                            Receive Updates &rarr;
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-amber-600 inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+                            <span>Receive Updates</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -100,8 +101,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Open to All</span>
-                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-emerald-700 inline-flex items-center gap-1 transition-colors cursor-pointer">
-                            Receive Updates &rarr;
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+                            <span>Receive Updates</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -127,8 +129,9 @@
                     </div>
                     <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 mt-6">
                         <span class="text-xs text-slate-500 font-medium">Sector Workshop</span>
-                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-sky-700 inline-flex items-center gap-1 transition-colors cursor-pointer">
-                            Receive Updates &rarr;
+                        <button @click="$dispatch('open-inquiry-modal')" type="button" class="text-xs font-bold uppercase tracking-wider text-navy-950 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+                            <span>Receive Updates</span>
+                            <i class="ri-arrow-right-line text-xs"></i>
                         </button>
                     </div>
                 </div>
@@ -174,7 +177,7 @@
                 <!-- Expectation 1 -->
                 <div class="group bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm mb-4">
-                        💡
+                        <i class="ri-lightbulb-line text-lg text-amber-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1.5 font-heading">Practical Focus</h3>
                     <p class="text-xs text-slate-500 leading-relaxed">Honest insights into operations, challenges, career transitions, and real problem-solving.</p>
@@ -183,7 +186,7 @@
                 <!-- Expectation 2 -->
                 <div class="group bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm mb-4">
-                        🤝
+                        <i class="ri-shake-hands-line text-lg text-emerald-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1.5 font-heading">Authentic Connections</h3>
                     <p class="text-xs text-slate-500 leading-relaxed">Meet students, professionals, and mentors who believe in mutual growth and giving back.</p>
@@ -192,7 +195,7 @@
                 <!-- Expectation 3 -->
                 <div class="group bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-800 flex items-center justify-center font-bold text-sm mb-4">
-                        💬
+                        <i class="ri-question-answer-line text-lg text-sky-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1.5 font-heading">Open Q&A</h3>
                     <p class="text-xs text-slate-500 leading-relaxed">Dedicated time for questions, interactive discussion, and direct dialogue with mentors.</p>
@@ -201,7 +204,7 @@
                 <!-- Expectation 4 -->
                 <div class="group bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300">
                     <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm mb-4">
-                        🌍
+                        <i class="ri-global-line text-lg text-indigo-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1.5 font-heading">Open to Everyone</h3>
                     <p class="text-xs text-slate-500 leading-relaxed">No prior credentials or Navodaya background required. All curious minds are welcome.</p>

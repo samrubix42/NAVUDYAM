@@ -31,9 +31,7 @@
                 <a href="tel:+917122550192"
                    class="group bg-white rounded-3xl p-6 border border-amber-100/60 shadow-xs text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
+                        <i class="ri-phone-line text-2xl text-amber-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1 font-heading">Call Us</h3>
                     <p class="text-xs text-slate-500">+91 712 255 0192</p>
@@ -43,9 +41,7 @@
                 <a href="mailto:contact@navudyam.org"
                    class="group bg-white rounded-3xl p-6 border border-emerald-100/60 shadow-xs text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
+                        <i class="ri-mail-line text-2xl text-emerald-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1 font-heading">Email Us</h3>
                     <p class="text-xs text-slate-500">contact@navudyam.org</p>
@@ -54,10 +50,7 @@
                 <!-- Location -->
                 <div class="bg-white rounded-3xl p-6 border border-sky-100/60 shadow-xs text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        </svg>
+                        <i class="ri-map-pin-2-line text-2xl text-sky-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1 font-heading">Headquarters</h3>
                     <p class="text-xs text-slate-500">Wardha, Maharashtra, India</p>
@@ -66,9 +59,7 @@
                 <!-- Office Hours -->
                 <div class="bg-white rounded-3xl p-6 border border-indigo-100/60 shadow-xs text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
                     <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-800 flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                        <i class="ri-time-line text-2xl text-indigo-800"></i>
                     </div>
                     <h3 class="font-bold text-navy-950 text-sm mb-1 font-heading">Office Hours</h3>
                     <p class="text-xs text-slate-500">Mon – Sat, 9:00 AM – 6:00 PM IST</p>
@@ -100,7 +91,7 @@
                     @if($submitted)
                         <div class="p-8 rounded-3xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
                             <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-xl font-bold">
-                                ✓
+                                <i class="ri-checkbox-circle-fill text-3xl text-emerald-600"></i>
                             </div>
                             <h4 class="text-xl font-bold text-emerald-900 font-heading">Thank You for Connecting!</h4>
                             <p class="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto leading-relaxed">
@@ -239,9 +230,7 @@
                         
                         <ul class="space-y-4 text-sm">
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-logo-yellow shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
+                                <i class="ri-phone-line text-logo-yellow text-lg shrink-0 mt-0.5"></i>
                                 <div>
                                     <p class="font-semibold text-white text-sm">Phone</p>
                                     <a href="tel:+917122550192" class="text-slate-300 text-xs hover:text-amber-400 transition-colors">+91 712 255 0192</a>
@@ -249,9 +238,7 @@
                             </li>
 
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-logo-yellow shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
+                                <i class="ri-mail-line text-logo-yellow text-lg shrink-0 mt-0.5"></i>
                                 <div>
                                     <p class="font-semibold text-white text-sm">Email Inquiries</p>
                                     <a href="mailto:contact@navudyam.org" class="text-slate-300 text-xs hover:text-amber-400 transition-colors">contact@navudyam.org</a>
@@ -261,10 +248,7 @@
                             </li>
 
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-logo-yellow shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
+                                <i class="ri-map-pin-2-line text-logo-yellow text-lg shrink-0 mt-0.5"></i>
                                 <div>
                                     <p class="font-semibold text-white text-sm">Location</p>
                                     <p class="text-slate-300 text-xs leading-relaxed">Wardha, Maharashtra, India</p>
@@ -280,9 +264,10 @@
                         </p>
                         <div class="pt-2">
                             <a href="{{ route('about') }}"
-                               class="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-amber-700 hover:text-amber-800 transition-colors">
+                               class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 hover:text-amber-800 transition-colors">
                                 <span>Read Our Story</span>
-                                <span>&rarr;</span>
+                                <i class="ri-arrow-right-line text-xs"></i>
+                            </a>
                             </a>
                         </div>
                     </div>
