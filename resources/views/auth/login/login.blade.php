@@ -16,6 +16,22 @@
             </p>
         </div>
 
+        <!-- Pre-filled Credentials Info Box -->
+        <div class="mb-5 p-3 rounded-xl bg-amber-50/70 border border-amber-200/60 text-xs text-slate-700 flex items-center justify-between">
+            <div class="space-y-0.5">
+                <div class="flex items-center gap-1.5">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span class="font-bold text-navy-950 text-xs">Pre-filled Admin Login</span>
+                </div>
+                <p class="text-[11px] text-slate-500 font-mono">admin@navudyam.org &bull; password</p>
+            </div>
+            <button type="button" 
+                    wire:click="$set('email', 'admin@navudyam.org'); $set('password', 'password')"
+                    class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-2xs transition-colors cursor-pointer">
+                Re-fill
+            </button>
+        </div>
+
         <!-- Validation Errors Callout -->
         @if ($errors->any())
             <div class="mb-5 p-3 rounded-lg bg-red-50 border border-red-200/70 text-red-700 text-xs flex items-start gap-2">
