@@ -17,11 +17,7 @@
                     <i class="ri-mail-line text-logo-yellow shrink-0 text-sm"></i>
                     <span>contact@navudyam.org</span>
                 </a>
-                <span class="hidden md:inline text-navy-800">|</span>
-                <span class="hidden lg:inline-flex items-center gap-1.5 text-slate-300 font-medium">
-                    <span class="w-1.5 h-1.5 rounded-full bg-logo-yellow inline-block"></span>
-                    <span>Rooted in Navodaya. Open to Everyone.</span>
-                </span>
+            
             </div>
 
             <!-- Right: Philosophy & Quick Link -->

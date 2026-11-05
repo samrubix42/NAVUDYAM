@@ -88,34 +88,24 @@
                     <article x-show="selectedCategory === 'all' || selectedCategory === '{{ $story['category'] }}'"
                              x-transition
                              @click="activeStory = @js($story)"
-                             class="group bg-white rounded-3xl p-5 border border-slate-200/80 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer">
+                             class="group bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/80 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer">
 
                         <div>
                             <div class="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5">
                                 <img src="{{ asset($story['image']) }}"
-                                     alt="{{ $story['alt'] }}"
+                                     alt="{{ $story['alt'] ?? $story['title'] }}"
                                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                             </div>
 
-                            <div class="flex items-center justify-between text-xs font-medium mb-2.5">
-                                <span class="uppercase tracking-wider font-bold text-amber-700">{{ $story['category'] }}</span>
-                                <span class="text-slate-400">{{ $story['read'] }}</span>
+                            <div class="space-y-2.5">
+                                <h3 class="text-lg sm:text-xl font-bold text-navy-950 group-hover:text-amber-600 transition-colors font-heading leading-snug">
+                                    {{ $story['title'] }}
+                                </h3>
+
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    {{ $story['excerpt'] }}
+                                </p>
                             </div>
-
-                            <h3 class="text-lg sm:text-xl font-bold text-navy-950 group-hover:text-amber-600 transition-colors font-heading leading-snug mb-3 line-clamp-2">
-                                {{ $story['title'] }}
-                            </h3>
-
-                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed line-clamp-3">
-                                {{ $story['excerpt'] }}
-                            </p>
-                        </div>
-
-                        <div class="pt-5 flex items-center text-xs sm:text-sm font-semibold text-navy-950 group-hover:text-amber-600 transition-colors">
-                            <span class="inline-flex items-center gap-1.5">
-                                <span>Read Full Story</span>
-                                <i class="ri-arrow-right-line text-sm transition-transform group-hover:translate-x-1"></i>
-                            </span>
                         </div>
                     </article>
                 @endforeach
@@ -125,7 +115,7 @@
         </div>
     </section>
 
-    <!-- Story Popup Modal -->
+    <!-- Story Popup Modal (With Image, Title and Description) -->
     <div x-show="activeStory"
          x-cloak
          x-transition:enter="transition ease-out duration-300"
@@ -134,7 +124,7 @@
          x-transition:leave="transition ease-in duration-200"
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0"
-         class="fixed inset-0 z-50 overflow-y-auto bg-navy-950/85 backdrop-blur-md p-4 sm:p-6">
+         class="fixed inset-0 z-50 overflow-y-auto bg-navy-950/85 backdrop-blur-md p-4 sm:p-6 flex items-center justify-center">
 
         <div @click.outside="activeStory = null"
              class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl my-6 sm:my-10 mx-auto">
@@ -149,34 +139,27 @@
 
             <!-- Cover Image -->
             <div class="aspect-[16/9] bg-slate-100">
-                <img :src="activeStory?.image" :alt="activeStory?.alt"
+                <img :src="activeStory?.image" :alt="activeStory?.alt || activeStory?.title"
                      class="w-full h-full object-cover" />
             </div>
 
-            <!-- Story Content -->
+            <!-- Story Content: Title and Description -->
             <div class="p-6 sm:p-8 space-y-4">
-                <div class="flex items-center justify-between text-xs font-medium">
-                    <span class="uppercase tracking-wider text-amber-700 font-bold" x-text="activeStory?.category"></span>
-                    <span class="text-slate-400" x-text="activeStory?.read"></span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-navy-950 font-heading tracking-tight leading-snug"
+                <h3 class="text-xl sm:text-2xl font-extrabold text-navy-950 font-heading tracking-tight leading-snug pr-8"
                     x-text="activeStory?.title"></h3>
 
                 <div class="w-12 h-1 bg-logo-yellow rounded-full"></div>
 
                 <div class="space-y-3.5">
                     <template x-for="(paragraph, index) in (activeStory?.body || [])" :key="index">
-                        <p class="text-slate-600 text-sm leading-relaxed" x-text="paragraph"></p>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed" x-text="paragraph"></p>
                     </template>
                 </div>
 
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <a href="#share-story" @click="activeStory = null"
-                       class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-navy-950 hover:bg-navy-900 shadow-sm transition-all duration-200">
-                        Share Your Story
-                    </a>
-                    <button @click="activeStory = null" class="text-xs text-slate-400 hover:text-navy-950 transition-colors cursor-pointer">
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-end">
+                    <button @click="activeStory = null" 
+                            type="button"
+                            class="px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-navy-950 bg-slate-100 hover:bg-slate-200 transition-colors cursor-pointer">
                         Close (Esc)
                     </button>
                 </div>
