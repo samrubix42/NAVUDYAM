@@ -31,7 +31,7 @@ new #[Layout('layouts::auth')] class extends Component
                     'email_verified_at' => now(),
                 ]);
             }
-        } catch (\Throwable) {
+        } catch (Throwable) {
             // Silently continue if database is in setup state
         }
 
@@ -54,7 +54,7 @@ new #[Layout('layouts::auth')] class extends Component
                 $this->redirect(route('admin.dashboard'));
 
                 return;
-            } catch (\Throwable) {
+            } catch (Throwable) {
                 // Ignore exception if DB not ready
             }
         }

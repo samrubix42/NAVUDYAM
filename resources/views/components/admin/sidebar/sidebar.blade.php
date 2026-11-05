@@ -67,21 +67,20 @@
                         <span class="text-[10px] text-slate-400 font-medium">4</span>
                     </a>
 
-                    <a href="#stories" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
+                    <a href="{{ route('admin.stories') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.stories') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
                         <div class="flex items-center gap-2.5">
-                            <i class="ri-article-line text-base shrink-0 text-slate-400"></i>
+                            <i class="ri-article-line text-base shrink-0 {{ request()->routeIs('admin.stories') ? 'text-white' : 'text-slate-400' }}"></i>
                             <span>Stories & Resources</span>
                         </div>
                     </a>
 
-                    <a href="#events" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
+                    <a href="{{ route('admin.events') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.events') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
                         <div class="flex items-center gap-2.5">
-                            <i class="ri-calendar-event-line text-base shrink-0 text-slate-400"></i>
+                            <i class="ri-calendar-event-line text-base shrink-0 {{ request()->routeIs('admin.events') ? 'text-white' : 'text-slate-400' }}"></i>
                             <span>Events & Sessions</span>
                         </div>
-                        <span class="text-[10px] text-slate-400 font-medium">3</span>
                     </a>
 
                     <a href="#inquiries" 

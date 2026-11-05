@@ -33,6 +33,9 @@
         <!-- Site Footer -->
         <x-public.footer.footer />
 
+        <!-- Alpine.js Global Toaster -->
+        <x-ui.toaster />
+
         @livewireScripts
     </body>
 </html>

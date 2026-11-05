@@ -40,6 +40,9 @@
             </div>
         </div>
 
+        <!-- Alpine.js Global Toaster -->
+        <x-ui.toaster />
+
         @livewireScripts
     </body>
 </html>

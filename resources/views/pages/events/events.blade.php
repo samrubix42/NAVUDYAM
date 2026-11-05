@@ -30,7 +30,7 @@
                 @foreach($events as $event)
                     <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
                         <div class="aspect-[16/10] overflow-hidden bg-slate-100">
-                            <img src="{{ asset($event['image']) }}"
+                            <img src="{{ Str::startsWith($event['image'], ['http://', 'https://']) ? $event['image'] : asset($event['image']) }}"
                                  alt="{{ $event['title'] }}"
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         </div>

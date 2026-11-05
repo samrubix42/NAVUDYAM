@@ -20,6 +20,8 @@ Route::middleware('guest')->group(function () {
 // Admin Panel (Protected by Auth)
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::livewire('/', 'admin::dashboard')->name('admin.dashboard');
+    Route::livewire('/events', 'admin::events')->name('admin.events');
+    Route::livewire('/stories', 'admin::stories')->name('admin.stories');
 });
 
 // Logout Route
