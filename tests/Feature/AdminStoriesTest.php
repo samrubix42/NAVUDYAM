@@ -169,3 +169,4 @@ test('admin can delete story and storage file is cleaned up', function () {
     $this->assertDatabaseMissing('stories', ['id' => $story->id]);
     Storage::disk('public')->assertMissing($path);
 });
+

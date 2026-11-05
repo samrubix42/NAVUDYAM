@@ -59,3 +59,4 @@ class StorySeeder extends Seeder
         }
     }
 }
+
