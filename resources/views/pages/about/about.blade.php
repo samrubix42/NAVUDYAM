@@ -1,80 +1,93 @@
 <div>
 
-    <!-- About Hero Banner (Clean Navy Header matching home hero tokens) -->
+    <!-- About Hero Banner -->
     <section class="bg-navy-950 text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.07] pointer-events-none"
              style="background-image: radial-gradient(circle at 20% 30%, #febd06 0, transparent 40%), radial-gradient(circle at 80% 70%, #3b82f6 0, transparent 40%);"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 sm:py-20 lg:py-24">
-            <div class="max-w-2xl space-y-4">
-                <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
-                    ABOUT US
-                </span>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.14] font-heading">
-                    A Family of Navodayans, <br class="hidden sm:inline" />
-                    Building Futures Together.
+            <div class="max-w-3xl space-y-4">
+                <div class="flex items-center gap-2 flex-wrap">
+                    <span class="inline-flex items-center px-3.5 py-1 rounded-full text-[11px] font-bold tracking-wider text-navy-950 bg-logo-yellow uppercase shadow-xs">
+                        OUR STORY
+                    </span>
+                    <span class="text-xs text-slate-300 font-medium">Rooted in Navodaya. Open to Everyone.</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] font-heading">
+                    A Shared Beginning. <br class="hidden sm:inline" />
+                    A New Purpose.
                 </h1>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl">
-                    NAVUDYAM Foundation is a alumni-led movement that turns rural talent into proud business owners — powered by the brotherhood of Jawahar Navodaya Vidyalayas.
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                    NAVUDYAM Foundation is a community-driven initiative focused on education, skill development, mentorship, entrepreneurship and meaningful collaboration. While our roots are in Navodaya, our purpose reaches beyond it.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Our Story (Split narrative matching home "Who We Are" pattern) -->
+    <!-- Our Story: The Human Narrative -->
     <section id="story" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                 <!-- Left Visual -->
                 <div class="lg:col-span-5">
-                    <img src="{{ asset('images/education.webp') }}"
-                         alt="Jawahar Navodaya Vidyalaya students and community"
-                         class="w-full h-80 sm:h-96 lg:h-[480px] object-cover rounded-2xl shadow-sm border border-amber-100/60" />
+                    <img src="{{ asset('images/Picture2.jpg') }}"
+                         alt="Friendships, alumni gathering and address at Jawahar Navodaya Vidyalaya Gyanpur"
+                         class="w-full h-80 sm:h-96 lg:h-[480px] object-cover object-top rounded-3xl shadow-sm border border-amber-100/60" />
                 </div>
 
                 <!-- Right Narrative -->
                 <div class="lg:col-span-7 space-y-5">
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">
-                        OUR STORY & PURPOSE
+                        THE HUMAN SIDE OF NAVUDYAM
                     </span>
 
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-950 tracking-tight leading-snug font-heading">
-                        Born from the Navodaya Family: <br />
-                        <span class="text-navy-700">Turning Rural Talent into Proud Business Owners.</span>
+                        Some friendships last a lifetime. <br />
+                        <span class="text-navy-700">Some grow into something greater.</span>
                     </h2>
 
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        Jawahar Navodaya Vidyalayas gather bright children from rural families and give them quality schooling. But after school, many hardworking Navodayans struggle to find good opportunities near their hometowns.
-                    </p>
+                    <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <p>
+                            NAVUDYAM grew from friendships formed at Jawahar Navodaya Vidyalaya, Gyanpur, Bhadohi, during 1991–1998. Over the years, those friendships continued as we pursued different careers and gained experiences across professions and industries.
+                        </p>
+                        <p>
+                            We eventually came together around a simple idea: what we have learned and the networks we have built should help others move forward.
+                        </p>
+                        <p>
+                            That shared belief is the starting point of NAVUDYAM Foundation. While our roots are in Navodaya, our purpose reaches beyond it. We welcome anyone who believes in learning, sharing and creating opportunities together.
+                        </p>
+                    </div>
 
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        <strong>NAVUDYAM Foundation</strong> was started by proud alumni to change that. We bring together our worldwide alumni family to help younger generations start real businesses, earn good incomes, and create jobs for others in their communities.
-                    </p>
+                    <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/60">
+                        <p class="text-xs sm:text-sm text-navy-950 font-semibold leading-relaxed">
+                            "Our journey began with friendship. Our purpose extends to everyone."
+                        </p>
+                    </div>
 
-                    <!-- 3 Core Principles -->
+                    <!-- 3 Core Founding Convictions -->
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                        <div class="p-5 rounded-2xl bg-white border border-slate-200/70 shadow-xs hover:shadow-md transition-all">
-                            <div class="w-9 h-9 rounded-full bg-navy-100 text-navy-900 flex items-center justify-center font-bold text-xs mb-2.5">
+                        <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
+                            <div class="w-8 h-8 rounded-full bg-navy-100 text-navy-900 flex items-center justify-center font-bold text-xs mb-2.5">
                                 01
                             </div>
-                            <h3 class="font-bold text-slate-900 text-sm">Dignified Work</h3>
-                            <p class="text-xs text-slate-500 mt-1">Helping youth run modern, clean, and profitable service businesses.</p>
+                            <h3 class="font-bold text-slate-900 text-sm">Lifelong Friendships</h3>
+                            <p class="text-xs text-slate-500 mt-1">Grounding our organization in enduring values of trust and mutual respect.</p>
                         </div>
 
-                        <div class="p-5 rounded-2xl bg-white border border-slate-200/70 shadow-xs hover:shadow-md transition-all">
-                            <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs mb-2.5">
+                        <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
+                            <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs mb-2.5">
                                 02
                             </div>
-                            <h3 class="font-bold text-slate-900 text-sm">Alumni Giving Back</h3>
-                            <p class="text-xs text-slate-500 mt-1">Senior Navodayans sharing their experience and time with younger batches.</p>
+                            <h3 class="font-bold text-slate-900 text-sm">Giving Back</h3>
+                            <p class="text-xs text-slate-500 mt-1">Using professional networks and learnings to open doors for emerging talent.</p>
                         </div>
 
-                        <div class="p-5 rounded-2xl bg-white border border-slate-200/70 shadow-xs hover:shadow-md transition-all">
-                            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs mb-2.5">
+                        <div class="p-5 rounded-2xl bg-[#FCFAF7] border border-slate-200/70 shadow-xs">
+                            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs mb-2.5">
                                 03
                             </div>
-                            <h3 class="font-bold text-slate-900 text-sm">Growing Together</h3>
-                            <p class="text-xs text-slate-500 mt-1">Keeping talent in local towns and helping rural families prosper.</p>
+                            <h3 class="font-bold text-slate-900 text-sm">Radical Inclusion</h3>
+                            <p class="text-xs text-slate-500 mt-1">Inspired by Navodaya roots, but completely welcoming to people from every background.</p>
                         </div>
                     </div>
                 </div>
@@ -83,48 +96,91 @@
         </div>
     </section>
 
-    <!-- Mission & Vision (Two clean cards on cream background) -->
-    <section id="mission" class="scroll-mt-24 py-16 lg:py-20 bg-[#FCFAF7] border-b border-amber-100/70">
+    <!-- What the Name Means -->
+    <section class="py-14 bg-gradient-to-b from-[#FCFAF7] to-white border-b border-amber-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-3 mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">
+                    OUR NAME & PHILOSOPHY
+                </span>
+                <h2 class="text-3xl font-extrabold text-navy-950 font-heading">
+                    The Essence of NAVUDYAM
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-600">
+                    Understanding what our name stands for and what guides every initiative we build.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white p-7 rounded-3xl border border-amber-100 shadow-xs space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-black text-navy-950 font-heading">NAV</span>
+                        <span class="text-xs font-bold uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-900">New Ideas</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        NAV represents new ideas, fresh beginnings, curiosity and possibilities. It is the belief that every person, given the right encouragement, can start something impactful.
+                    </p>
+                </div>
+
+                <div class="bg-white p-7 rounded-3xl border border-emerald-100 shadow-xs space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-black text-navy-950 font-heading">UDYAM</span>
+                        <span class="text-xs font-bold uppercase px-2.5 py-1 rounded bg-emerald-100 text-emerald-900">Purposeful Action</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        UDYAM represents enterprise, initiative, entrepreneurship and purposeful action. It reflects the conviction that meaningful change requires hard work and persistence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6 max-w-4xl mx-auto p-5 rounded-2xl bg-navy-950 text-white text-center sm:text-left flex flex-col sm:flex-row items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-amber-400 text-navy-950 font-bold flex items-center justify-center shrink-0">
+                    ✨
+                </div>
+                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                    <strong>Together, NAVUDYAM</strong> reflects our conviction that practical knowledge, shared effort and genuine connections can create fresh opportunities for personal, professional and social growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section id="mission" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">
-                    WHAT DRIVES US
+                    PURPOSE & DIRECTION
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight font-heading">
                     Our Mission & Vision
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                    A clear purpose, a bold future — rooted in the values of the Navodaya family.
+                    Guided by the values of education, community and self-reliance.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
                 <!-- Mission Card -->
-                <div class="group bg-white rounded-2xl p-7 sm:p-9 border border-amber-100/60 shadow-xs hover:shadow-md transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mb-5">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
+                <div class="group bg-[#FCFAF7] rounded-3xl p-8 sm:p-10 border border-amber-100 shadow-xs hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center mb-6 text-xl">
+                        🎯
                     </div>
-                    <h3 class="text-xl font-bold text-navy-950 font-heading tracking-tight mb-2.5">Our Mission</h3>
+                    <h3 class="text-2xl font-bold text-navy-950 font-heading tracking-tight mb-3">Our Mission</h3>
                     <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        To empower Navodaya students and alumni in rural and small-town India with practical skills, mentorship, and enterprise support — so they can start dignified local businesses, earn good incomes, and create jobs for their communities.
+                        To empower individuals and communities through education, skill development, mentorship, entrepreneurship and collaborative initiatives that create meaningful opportunities for personal, professional and social growth. Inspired by Navodaya values, we seek to connect knowledge with opportunity and experience with aspiration.
                     </p>
                 </div>
 
                 <!-- Vision Card -->
-                <div class="group bg-white rounded-2xl p-7 sm:p-9 border border-sky-100/60 shadow-xs hover:shadow-md transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-800 flex items-center justify-center mb-5">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                        </svg>
+                <div class="group bg-[#FCFAF7] rounded-3xl p-8 sm:p-10 border border-sky-100 shadow-xs hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center mb-6 text-xl">
+                        🔭
                     </div>
-                    <h3 class="text-xl font-bold text-navy-950 font-heading tracking-tight mb-2.5">Our Vision</h3>
+                    <h3 class="text-2xl font-bold text-navy-950 font-heading tracking-tight mb-3">Our Vision</h3>
                     <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        An India where talent from every village finds opportunity at home — where every Navodayan, no matter how remote their town, has a clear path to becoming a successful entrepreneur and a job creator.
+                        To build an inclusive, collaborative ecosystem where people from every background can learn, innovate, become self-reliant and contribute meaningfully to society.
                     </p>
                 </div>
 
@@ -132,73 +188,95 @@
         </div>
     </section>
 
-    <!-- Our Values (Icon-chip card grid, pastel pillar tints) -->
-    <section id="values" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
+    <!-- Our Values: The 6 Core Values -->
+    <section id="values" class="scroll-mt-24 py-16 lg:py-20 bg-[#FCFAF7] border-b border-amber-100/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">
-                    WHAT WE STAND FOR
+                    GUIDING PRINCIPLES
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight font-heading">
                     The Values That Guide Us
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                    Simple principles, learned in Navodaya classrooms and practiced every day in our communities.
+                    Six simple principles that anchor our work, our relationships, and our community.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Value 1 -->
-                <div class="group bg-gradient-to-b from-sky-50/60 to-white rounded-2xl p-6 border border-sky-100/90 shadow-xs hover:shadow-md hover:border-sky-300 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-sky-100 text-sky-800 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                        </svg>
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-sky-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-900 flex items-center justify-center font-bold text-sm mb-4">
+                        01
                     </div>
-                    <h3 class="font-bold text-navy-950 text-sm mb-1.5">Learn by Doing</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Practical, hands-on skills over theory — real training for real businesses.</p>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Learn with Purpose</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Practical knowledge and lifelong learning that bridge the gap between classroom theory and real-world application.
+                    </p>
                 </div>
 
                 <!-- Value 2 -->
-                <div class="group bg-gradient-to-b from-emerald-50/60 to-white rounded-2xl p-6 border border-emerald-100/90 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-emerald-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-bold text-sm mb-4">
+                        02
                     </div>
-                    <h3 class="font-bold text-navy-950 text-sm mb-1.5">Alumni Brotherhood</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Seniors guiding juniors — the Navodaya family looking out for its own.</p>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Connect with Compassion</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Meaningful relationships across generations and communities built on empathy, mutual understanding, and respect.
+                    </p>
                 </div>
 
                 <!-- Value 3 -->
-                <div class="group bg-gradient-to-b from-amber-50/60 to-white rounded-2xl p-6 border border-amber-100/90 shadow-xs hover:shadow-md hover:border-amber-300 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-amber-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-sm mb-4">
+                        03
                     </div>
-                    <h3 class="font-bold text-navy-950 text-sm mb-1.5">Dignity in Work</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Every honest business, big or small, deserves respect and support.</p>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Grow Together</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Shared progress and collective success. We believe that true growth happens when we elevate those around us.
+                    </p>
                 </div>
 
                 <!-- Value 4 -->
-                <div class="group bg-gradient-to-b from-indigo-50/60 to-white rounded-2xl p-6 border border-indigo-100/90 shadow-xs hover:shadow-md hover:border-indigo-300 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-indigo-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-900 flex items-center justify-center font-bold text-sm mb-4">
+                        04
                     </div>
-                    <h3 class="font-bold text-navy-950 text-sm mb-1.5">Rooted Locally</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Opportunity in small towns, so talent doesn't have to leave home to thrive.</p>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Integrity & Trust</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Transparency, responsibility, and ethical conduct in every initiative, partnership, and resource entrusted to us.
+                    </p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-rose-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-900 flex items-center justify-center font-bold text-sm mb-4">
+                        05
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Dignity & Inclusion</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Respect for every individual and every honest ambition, regardless of background, geography, or prior affiliation.
+                    </p>
+                </div>
+
+                <!-- Value 6 -->
+                <div class="group bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-purple-300 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-900 flex items-center justify-center font-bold text-sm mb-4">
+                        06
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base mb-1.5 font-heading">Giving Back</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                        Using our experience, networks, and professional success to open doors, guide journeys, and support the next generation.
+                    </p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- The Navudyam Journey (Navy section with numbered steps) -->
+    <!-- The Navudyam Journey -->
     <section id="journey" class="scroll-mt-24 py-16 lg:py-20 bg-navy-950 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -207,52 +285,52 @@
                     OUR JOURNEY
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-heading">
-                    From a Shared Idea to a Growing Movement
+                    From a Shared Idea to a Growing Community
                 </h2>
                 <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    How a group of proud alumni turned brotherhood into a mission for rural enterprise.
+                    How lifelong friendships and mutual aspirations shaped NAVUDYAM Foundation.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
 
                 <!-- Milestone 1 -->
-                <div class="bg-navy-900/90 rounded-2xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
+                <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
                     <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">01</div>
-                    <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">THE BEGINNING</span>
-                    <h3 class="text-base font-bold text-white mb-2">A Conversation Among Alumni</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        Navodayans from different batches and careers came together over a shared concern — rural talent with nowhere to go after school.
+                    <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">1991–1998</span>
+                    <h3 class="text-base font-bold text-white mb-2">School Friendships</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Friendships formed at Jawahar Navodaya Vidyalaya, Gyanpur, Bhadohi, establishing shared values of curiosity and camaraderie.
                     </p>
                 </div>
 
                 <!-- Milestone 2 -->
-                <div class="bg-navy-900/90 rounded-2xl p-6 border border-navy-800 relative hover:border-emerald-400/50 transition-all duration-200">
+                <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-emerald-400/50 transition-all duration-200">
                     <div class="text-emerald-400 font-extrabold text-2xl mb-2 font-heading">02</div>
-                    <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-300 block mb-1">THE MODEL</span>
-                    <h3 class="text-base font-bold text-white mb-2">The Pathway Took Shape</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        A four-stage model emerged: meet and choose, hands-on training, setup and launch, and long-term alumni mentorship.
+                    <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-300 block mb-1">DIVERSE PATHWAYS</span>
+                    <h3 class="text-base font-bold text-white mb-2">Industry Experience</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Pursuing varied careers across engineering, corporate leadership, services, and entrepreneurship while staying connected.
                     </p>
                 </div>
 
                 <!-- Milestone 3 -->
-                <div class="bg-navy-900/90 rounded-2xl p-6 border border-navy-800 relative hover:border-sky-400/50 transition-all duration-200">
+                <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-sky-400/50 transition-all duration-200">
                     <div class="text-sky-400 font-extrabold text-2xl mb-2 font-heading">03</div>
-                    <span class="text-[11px] uppercase tracking-wider font-bold text-sky-300 block mb-1">THE LAUNCH</span>
-                    <h3 class="text-base font-bold text-white mb-2">First Enterprises on the Ground</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        Training camps, discounted machine setups, and government scheme connections turned ideas into running businesses in small towns.
+                    <span class="text-[11px] uppercase tracking-wider font-bold text-sky-300 block mb-1">THE SEED OF PURPOSE</span>
+                    <h3 class="text-base font-bold text-white mb-2">The Idea Takes Form</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Recognizing the opportunity to mobilize skills, industry networks, and mentorship to help young people start viable initiatives.
                     </p>
                 </div>
 
                 <!-- Milestone 4 -->
-                <div class="bg-navy-900/90 rounded-2xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
+                <div class="bg-navy-900/90 rounded-3xl p-6 border border-navy-800 relative hover:border-amber-400/50 transition-all duration-200">
                     <div class="text-amber-400 font-extrabold text-2xl mb-2 font-heading">04</div>
-                    <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">TODAY & BEYOND</span>
-                    <h3 class="text-base font-bold text-white mb-2">A Nationwide Community</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        Hundreds of businesses, thousands of students guided, and 1,200+ alumni mentors — growing stronger with every batch.
+                    <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 block mb-1">TODAY & FORWARD</span>
+                    <h3 class="text-base font-bold text-white mb-2">Open to Everyone</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Evolving into an inclusive foundation where learners, mentors, entrepreneurs, and partners from every background work together.
                     </p>
                 </div>
 
@@ -260,65 +338,34 @@
         </div>
     </section>
 
-    <!-- Impact Counter Strip (matching home impact strip) -->
-    <section id="impact" class="scroll-mt-24 bg-[#FAF8F5] py-12 border-b border-amber-100/70">
+    <!-- Community CTA Banner -->
+    <section class="py-16 bg-[#FAF8F5] border-t border-slate-200/70 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-                <div class="bg-white rounded-2xl p-5 border border-amber-100/60 shadow-xs text-center hover:shadow-md transition-shadow">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight font-heading">660+</p>
-                    <p class="text-sm font-semibold text-slate-800 mt-1.5">Navodaya Schools</p>
-                    <p class="text-xs text-slate-500 mt-0.5">Across rural districts in India</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-5 border border-emerald-100/60 shadow-xs text-center hover:shadow-md transition-shadow">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-emerald-700 tracking-tight font-heading">15,000+</p>
-                    <p class="text-sm font-semibold text-slate-800 mt-1.5">Students Guided</p>
-                    <p class="text-xs text-slate-500 mt-0.5">Practical, digital & career skills</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-5 border border-amber-100/60 shadow-xs text-center hover:shadow-md transition-shadow">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-amber-600 tracking-tight font-heading">350+</p>
-                    <p class="text-sm font-semibold text-slate-800 mt-1.5">Small Businesses</p>
-                    <p class="text-xs text-slate-500 mt-0.5">Started and running in rural towns</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-5 border border-sky-100/60 shadow-xs text-center hover:shadow-md transition-shadow">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-navy-800 tracking-tight font-heading">1,200+</p>
-                    <p class="text-sm font-semibold text-slate-800 mt-1.5">Alumni Guides</p>
-                    <p class="text-xs text-slate-500 mt-0.5">Seniors ready to help students</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Community CTA Banner (matching home community banner pattern) -->
-    <section class="py-16 bg-navy-950 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
-                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400 block">
-                        BE PART OF THE STORY
-                    </span>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
-                        Every Navodayan Has a Role <br class="hidden sm:inline" />
-                        in This Movement.
-                    </h2>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-                        Mentor a student, partner with us, or bring an enterprise idea from your town — no matter which JNV you come from, there's a place for you in the NAVUDYAM family.
-                    </p>
-                </div>
-                <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-                    <button @click="$dispatch('open-inquiry-modal')"
-                            type="button"
-                            class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer">
-                        Get Involved
-                    </button>
-                    <a href="{{ route('home') }}#initiatives"
-                       class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-white bg-navy-800 hover:bg-navy-700 border border-navy-700 rounded-full transition-all shadow-sm">
-                        Explore Our Initiatives
-                    </a>
+            <div class="bg-navy-950 text-white rounded-3xl p-8 sm:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 block">
+                            BE PART OF SOMETHING MEANINGFUL
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
+                            Our Journey Began with Friendship. <br class="hidden sm:inline" />
+                            Our Purpose Extends to Everyone.
+                        </h2>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+                            Whether you are looking to learn practical skills, mentor someone, share an idea, or collaborate with us as an institution, we would love to connect.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+                        <button @click="$dispatch('open-inquiry-modal')"
+                                type="button"
+                                class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer">
+                            Join NAVUDYAM
+                        </button>
+                        <a href="{{ route('initiatives') }}"
+                           class="text-center px-7 py-3 text-xs font-bold uppercase tracking-wider text-white bg-navy-900 hover:bg-navy-800 border border-navy-800 rounded-full transition-all shadow-sm">
+                            Explore What We Do
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

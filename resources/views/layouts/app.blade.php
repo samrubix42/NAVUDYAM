@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ $title ?? 'NAVUDYAM Foundation | Empowering Navodayans — From Skills to Enterprise' }}</title>
-        <meta name="description" content="NAVUDYAM Foundation is dedicated to empowering Jawahar Navodaya Vidyalaya students, alumni, and rural youth through education, entrepreneurship incubation, lifelong mentorship, and community-led enterprise.">
-        <meta name="keywords" content="NAVUDYAM Foundation, Navodaya, JNV Alumni, Jawahar Navodaya Vidyalaya, Entrepreneurship, Mentorship, Rural Youth, Laundry & Allied Services, Skills to Enterprise">
+        <title>{{ $title ?? 'NAVUDYAM Foundation | Where New Ideas Find New Beginnings' }}</title>
+        <meta name="description" content="NAVUDYAM Foundation is a community-driven initiative focused on education, skill development, mentorship, entrepreneurship and meaningful collaboration. Rooted in Navodaya. Open to Everyone.">
+        <meta name="keywords" content="NAVUDYAM Foundation, Education, Skill Development, Mentorship, Entrepreneurship, Navodaya, JNV, Open to Everyone, Community Collaboration, Allied Industry">
         <link rel="icon" type="image/webp" href="{{ asset('logo.webp') }}">
 
         <!-- Fonts: Slim & Clean Typography (Urbanist + Inter) -->

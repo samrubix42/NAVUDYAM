@@ -4,9 +4,9 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodayans — From Skills to Enterprise')] class extends Component
+new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Where New Ideas Find New Beginnings')] class extends Component
 {
-    public string $inquiryType = 'mentor';
+    public string $inquiryType = 'student';
 
     public string $inquiryName = '';
 
@@ -14,7 +14,13 @@ new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodaya
 
     public string $inquiryPhone = '';
 
-    public string $inquiryJnvSchool = '';
+    public string $inquiryCity = '';
+
+    public string $inquiryInterest = '';
+
+    public string $inquiryAffiliation = 'none';
+
+    public string $inquiryAffiliationDetail = '';
 
     public string $inquiryMessage = '';
 
@@ -25,8 +31,13 @@ new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodaya
         $this->validate([
             'inquiryName' => 'required|min:2|max:100',
             'inquiryEmail' => 'required|email|max:100',
-            'inquiryPhone' => 'required|min:10|max:15',
-            'inquiryType' => 'required|in:mentor,entrepreneur,partner',
+            'inquiryPhone' => 'nullable|max:20',
+            'inquiryCity' => 'nullable|max:100',
+            'inquiryType' => 'required|in:student,mentor,entrepreneur,volunteer,partner,community,general',
+            'inquiryInterest' => 'nullable|max:150',
+            'inquiryAffiliation' => 'nullable|in:none,alumnus,student,supporter',
+            'inquiryAffiliationDetail' => 'nullable|max:150',
+            'inquiryMessage' => 'nullable|max:1000',
         ]);
 
         $this->inquirySubmitted = true;
@@ -35,10 +46,14 @@ new #[Layout('layouts::app')] #[Title('NAVUDYAM Foundation | Empowering Navodaya
     public function resetInquiry(): void
     {
         $this->reset([
+            'inquiryType',
             'inquiryName',
             'inquiryEmail',
             'inquiryPhone',
-            'inquiryJnvSchool',
+            'inquiryCity',
+            'inquiryInterest',
+            'inquiryAffiliation',
+            'inquiryAffiliationDetail',
             'inquiryMessage',
             'inquirySubmitted',
         ]);
