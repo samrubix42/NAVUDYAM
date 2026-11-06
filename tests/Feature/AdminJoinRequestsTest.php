@@ -174,4 +174,3 @@ test('admin can delete a join application', function () {
         'id' => $join->id,
     ]);
 });
-

@@ -56,4 +56,3 @@ class JoinRequestSeeder extends Seeder
         }
     }
 }
-

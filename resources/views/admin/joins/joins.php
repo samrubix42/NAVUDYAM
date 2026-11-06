@@ -213,4 +213,3 @@ return new #[Layout('layouts::admin')] #[Title('Join Applications | NAVUDYAM Adm
         return $query->paginate(10);
     }
 };
-

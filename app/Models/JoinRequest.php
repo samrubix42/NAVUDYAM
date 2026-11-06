@@ -55,4 +55,3 @@ class JoinRequest extends Model
         return $query->where('is_read', true);
     }
 }
-

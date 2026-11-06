@@ -29,16 +29,16 @@
             <!-- Close button for mobile -->
             <button @click="sidebarOpen = false" 
                     type="button" 
-                    class="lg:hidden text-slate-400 hover:text-slate-600 p-1 rounded-md hover:bg-slate-100"
+                    class="lg:hidden text-slate-400 hover:text-slate-600 p-1 rounded-md hover:bg-slate-100 cursor-pointer"
                     aria-label="Close sidebar">
                 <i class="ri-close-line text-xl"></i>
             </button>
         </div>
 
-        <!-- Navigation Links (shadcn style) -->
+        <!-- Navigation Links (Only Valid Links) -->
         <nav class="flex-1 px-3 py-4 space-y-6 overflow-y-auto text-xs">
             
-            <!-- Group: Overview -->
+            <!-- Group: Main -->
             <div>
                 <p class="px-2.5 pb-2 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
                     Overview
@@ -46,59 +46,19 @@
                 <div class="space-y-1">
                     <a href="{{ route('admin.dashboard') }}" 
                        class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.dashboard') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
-                        <i class="ri-dashboard-line text-base shrink-0"></i>
+                        <i class="ri-dashboard-line text-base shrink-0 {{ request()->routeIs('admin.dashboard') ? 'text-white' : 'text-slate-400' }}"></i>
                         <span>Dashboard</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Group: Programs & Content -->
+            <!-- Group: Submissions & Leads -->
             <div>
                 <p class="px-2.5 pb-2 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
-                    Programs & Content
+                    Submissions
                 </p>
                 <div class="space-y-1">
-                    <a href="#initiatives" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
-                        <div class="flex items-center gap-2.5">
-                            <i class="ri-apps-2-line text-base shrink-0 text-slate-400"></i>
-                            <span>Initiatives</span>
-                        </div>
-                        <span class="text-[10px] text-slate-400 font-medium">4</span>
-                    </a>
-
-                    <a href="{{ route('admin.stories') }}" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.stories') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
-                        <div class="flex items-center gap-2.5">
-                            <i class="ri-article-line text-base shrink-0 {{ request()->routeIs('admin.stories') ? 'text-white' : 'text-slate-400' }}"></i>
-                            <span>Stories & Resources</span>
-                        </div>
-                    </a>
-
-                    <a href="{{ route('admin.events') }}" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.events') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
-                        <div class="flex items-center gap-2.5">
-                            <i class="ri-calendar-event-line text-base shrink-0 {{ request()->routeIs('admin.events') ? 'text-white' : 'text-slate-400' }}"></i>
-                            <span>Events & Sessions</span>
-                        </div>
-                    </a>
-
-                    <a href="{{ route('admin.contacts') }}" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.contacts') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
-                        <div class="flex items-center gap-2.5">
-                            <i class="ri-mail-open-line text-base shrink-0 {{ request()->routeIs('admin.contacts') ? 'text-white' : 'text-slate-400' }}"></i>
-                            <span>Inquiries & Messages</span>
-                        </div>
-                        @php
-                            $unreadInquiries = \App\Models\Contact::where('is_read', false)->count();
-                        @endphp
-                        @if($unreadInquiries > 0)
-                            <span class="text-[10px] font-semibold {{ request()->routeIs('admin.contacts') ? 'bg-white/20 text-white' : 'text-amber-700 bg-amber-50 border border-amber-200/70' }} px-1.5 py-0.5 rounded-full">
-                                {{ $unreadInquiries }} New
-                            </span>
-                        @endif
-                    </a>
-
+                    <!-- Join Applications -->
                     <a href="{{ route('admin.joins') }}" 
                        class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.joins') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
                         <div class="flex items-center gap-2.5">
@@ -114,32 +74,68 @@
                             </span>
                         @endif
                     </a>
+
+                    <!-- Inquiries & Contact Messages -->
+                    <a href="{{ route('admin.contacts') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.contacts') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ri-mail-open-line text-base shrink-0 {{ request()->routeIs('admin.contacts') ? 'text-white' : 'text-slate-400' }}"></i>
+                            <span>Inquiries & Messages</span>
+                        </div>
+                        @php
+                            $unreadContacts = \App\Models\Contact::where('is_read', false)->count();
+                        @endphp
+                        @if($unreadContacts > 0)
+                            <span class="text-[10px] font-semibold {{ request()->routeIs('admin.contacts') ? 'bg-white/20 text-white' : 'text-amber-700 bg-amber-50 border border-amber-200/70' }} px-1.5 py-0.5 rounded-full">
+                                {{ $unreadContacts }} New
+                            </span>
+                        @endif
+                    </a>
                 </div>
             </div>
 
-            <!-- Group: Community & Settings -->
+            <!-- Group: Content Management -->
             <div>
                 <p class="px-2.5 pb-2 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
-                    Platform
+                    Content & Events
                 </p>
                 <div class="space-y-1">
-                    <a href="#mentors" 
-                       class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
-                        <i class="ri-user-star-line text-base shrink-0 text-slate-400"></i>
-                        <span>Alumni Mentors</span>
+                    <!-- Events & Sessions -->
+                    <a href="{{ route('admin.events') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.events') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ri-calendar-event-line text-base shrink-0 {{ request()->routeIs('admin.events') ? 'text-white' : 'text-slate-400' }}"></i>
+                            <span>Events & Sessions</span>
+                        </div>
                     </a>
 
-                    <a href="#settings" 
-                       class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
-                        <i class="ri-settings-4-line text-base shrink-0 text-slate-400"></i>
-                        <span>Settings</span>
+                    <!-- Stories & Resources -->
+                    <a href="{{ route('admin.stories') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.stories') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ri-article-line text-base shrink-0 {{ request()->routeIs('admin.stories') ? 'text-white' : 'text-slate-400' }}"></i>
+                            <span>Stories & Resources</span>
+                        </div>
                     </a>
                 </div>
+            </div>
+
+            <!-- Quick Website Link -->
+            <div class="pt-2">
+                <a href="{{ route('home') }}" 
+                   target="_blank"
+                   class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100/70 transition-colors border border-dashed border-slate-200">
+                    <div class="flex items-center gap-2">
+                        <i class="ri-external-link-line text-sm shrink-0 text-slate-400"></i>
+                        <span>View Public Website</span>
+                    </div>
+                    <i class="ri-arrow-right-up-line text-xs text-slate-400"></i>
+                </a>
             </div>
 
         </nav>
 
-        <!-- Bottom User Profile Card (shadcn style) -->
+        <!-- Bottom User Profile Card -->
         <div class="p-3 border-t border-slate-200/80">
             <div class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50 transition-colors">
                 <div class="flex items-center gap-2.5 min-w-0">
