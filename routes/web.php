@@ -23,6 +23,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::livewire('/events', 'admin::events')->name('admin.events');
     Route::livewire('/stories', 'admin::stories')->name('admin.stories');
     Route::livewire('/contacts', 'admin::contacts')->name('admin.contacts');
+    Route::livewire('/joins', 'admin::joins')->name('admin.joins');
 });
 
 // Logout Route

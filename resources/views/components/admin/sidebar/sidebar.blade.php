@@ -98,6 +98,22 @@
                             </span>
                         @endif
                     </a>
+
+                    <a href="{{ route('admin.joins') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.joins') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ri-user-add-line text-base shrink-0 {{ request()->routeIs('admin.joins') ? 'text-white' : 'text-slate-400' }}"></i>
+                            <span>Join Applications</span>
+                        </div>
+                        @php
+                            $unreadJoins = \App\Models\JoinRequest::where('is_read', false)->count();
+                        @endphp
+                        @if($unreadJoins > 0)
+                            <span class="text-[10px] font-semibold {{ request()->routeIs('admin.joins') ? 'bg-white/20 text-white' : 'text-amber-700 bg-amber-50 border border-amber-200/70' }} px-1.5 py-0.5 rounded-full">
+                                {{ $unreadJoins }} New
+                            </span>
+                        @endif
+                    </a>
                 </div>
             </div>
 

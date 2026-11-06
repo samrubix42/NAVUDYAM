@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             EventSeeder::class,
             StorySeeder::class,
             ContactSeeder::class,
+            JoinRequestSeeder::class,
         ]);
     }
 }

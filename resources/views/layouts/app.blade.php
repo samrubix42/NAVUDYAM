@@ -33,6 +33,9 @@
         <!-- Site Footer -->
         <x-public.footer.footer />
 
+        <!-- Public Join / Inquiry Modal Component -->
+        <livewire:public::join-modal />
+
         <!-- Alpine.js Global Toaster -->
         <x-ui.toaster />
 
