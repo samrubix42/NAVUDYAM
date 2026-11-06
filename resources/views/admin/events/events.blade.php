@@ -277,7 +277,7 @@
                            type="text" 
                            id="event-title" 
                            required 
-                           placeholder="e.g. NAVUDYAM Learning Circle: Practical Skills Dialogue" 
+                           placeholder="Event title" 
                            class="h-9 w-full rounded-md border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-900 placeholder:text-zinc-400 shadow-2xs focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 transition-colors @error('title') border-red-500 focus-visible:ring-red-500 @enderror" />
                     @error('title')
                         <p class="text-red-600 text-[11px]">{{ $message }}</p>

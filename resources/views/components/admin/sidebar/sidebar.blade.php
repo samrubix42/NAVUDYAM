@@ -83,13 +83,20 @@
                         </div>
                     </a>
 
-                    <a href="#inquiries" 
-                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-colors">
+                    <a href="{{ route('admin.contacts') }}" 
+                       class="flex items-center justify-between px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.contacts') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
                         <div class="flex items-center gap-2.5">
-                            <i class="ri-mail-open-line text-base shrink-0 text-slate-400"></i>
-                            <span>Applications & Inquiries</span>
+                            <i class="ri-mail-open-line text-base shrink-0 {{ request()->routeIs('admin.contacts') ? 'text-white' : 'text-slate-400' }}"></i>
+                            <span>Inquiries & Messages</span>
                         </div>
-                        <span class="text-[10px] font-semibold text-amber-700 bg-amber-50 border border-amber-200/70 px-1.5 py-0.2 rounded">5 New</span>
+                        @php
+                            $unreadInquiries = \App\Models\Contact::where('is_read', false)->count();
+                        @endphp
+                        @if($unreadInquiries > 0)
+                            <span class="text-[10px] font-semibold {{ request()->routeIs('admin.contacts') ? 'bg-white/20 text-white' : 'text-amber-700 bg-amber-50 border border-amber-200/70' }} px-1.5 py-0.5 rounded-full">
+                                {{ $unreadInquiries }} New
+                            </span>
+                        @endif
                     </a>
                 </div>
             </div>

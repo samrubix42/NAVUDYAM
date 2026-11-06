@@ -162,4 +162,3 @@ test('admin can delete event and storage file is cleaned up', function () {
     $this->assertDatabaseMissing('events', ['id' => $event->id]);
     Storage::disk('public')->assertMissing($path);
 });
-

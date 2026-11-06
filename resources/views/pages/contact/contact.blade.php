@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <!-- Get Involved Comprehensive Form -->
+    <!-- Contact Form Section -->
     <section id="write-to-us" class="scroll-mt-24 py-16 lg:py-20 bg-white border-b border-slate-200/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -78,13 +78,13 @@
                 <div class="lg:col-span-7">
                     <div class="space-y-2 mb-8">
                         <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">
-                            GET INVOLVED FORM
+                            CONTACT & INQUIRIES
                         </span>
                         <h2 class="text-2xl sm:text-3xl font-bold text-navy-950 tracking-tight font-heading">
-                            Tell Us How You'd Like to Connect
+                            Send Us a Message
                         </h2>
                         <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                            Fill in the form below and a member of our team will reach out directly to welcome you.
+                            Fill in your details below and a member of our team will reach out directly.
                         </p>
                     </div>
 
@@ -95,7 +95,7 @@
                             </div>
                             <h4 class="text-xl font-bold text-emerald-900 font-heading">Thank You for Connecting!</h4>
                             <p class="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto leading-relaxed">
-                                We have received your details. A member of our team will connect with you directly within 48 hours.
+                                We have received your inquiry. A member of our team will connect with you directly.
                             </p>
                             <button wire:click="resetContact"
                                     class="mt-2 px-6 py-2.5 text-xs font-bold uppercase tracking-wider bg-emerald-700 hover:bg-emerald-800 text-white rounded-full transition-colors shadow-sm cursor-pointer">
@@ -103,116 +103,67 @@
                             </button>
                         </div>
                     @else
-                        <form wire:submit="submitContact" class="bg-[#FCFAF7] rounded-3xl p-6 sm:p-8 border border-amber-100/70 space-y-5">
+                        <form wire:submit="submitContact" class="bg-[#FCFAF7] rounded-3xl p-6 sm:p-8 border border-amber-100/70 space-y-4">
 
-                            <!-- Participation Type Radio Choices (Section 6 Requirements) -->
-                            <div class="space-y-2">
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">
-                                    How would you like to participate? *
-                                </label>
-                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'student' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="student" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Student / Learner</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'mentor' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="mentor" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Mentor / Professional</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'entrepreneur' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="entrepreneur" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Entrepreneur</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'volunteer' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="volunteer" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Volunteer</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'partner' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="partner" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Corporate / CSR</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all {{ $participationType === 'community' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="community" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">Navodaya Community</span>
-                                    </label>
-                                    <label class="flex items-center gap-2 p-2.5 rounded-xl border cursor-pointer transition-all sm:col-span-3 {{ $participationType === 'general' ? 'border-navy-900 bg-white text-navy-900 font-bold shadow-xs' : 'border-slate-200 bg-white/70 text-slate-600' }}">
-                                        <input type="radio" wire:model.live="participationType" value="general" class="text-navy-900 focus:ring-navy-900" />
-                                        <span class="text-xs">General Enquiry</span>
-                                    </label>
-                                </div>
-                                @error('participationType') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
-                            </div>
-
-                            <!-- Name & Email Inputs -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <!-- Inputs: Name, Email, Phone, Subject -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Full Name (Optional) -->
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
-                                    <input type="text" wire:model="name" placeholder="e.g. Ramesh Kumar"
-                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500" />
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
+                                        Full Name <span class="text-slate-400 font-normal">(Optional)</span>
+                                    </label>
+                                    <input type="text" wire:model="name" placeholder="Full name"
+                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500 @error('name') border-rose-500 @enderror" />
                                     @error('name') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
                                 </div>
 
+                                <!-- Email Address (Optional) -->
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
-                                    <input type="email" wire:model="email" placeholder="e.g. ramesh@example.com"
-                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500" />
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
+                                        Email Address <span class="text-slate-400 font-normal">(Optional)</span>
+                                    </label>
+                                    <input type="email" wire:model="email" placeholder="Email address"
+                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500 @error('email') border-rose-500 @enderror" />
                                     @error('email') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
                                 </div>
 
+                                <!-- Phone / WhatsApp (Required) -->
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Phone / WhatsApp (Optional)</label>
-                                    <input type="text" wire:model="phone" placeholder="e.g. +91 9876543210"
-                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500" />
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
+                                        Phone / WhatsApp <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input type="tel" wire:model="phone" required placeholder="Phone number"
+                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500 @error('phone') border-rose-500 @enderror" />
                                     @error('phone') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
                                 </div>
 
+                                <!-- Subject (Required) -->
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">City / Location</label>
-                                    <input type="text" wire:model="city" placeholder="e.g. Wardha, Pune, Bhadohi"
-                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500" />
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
+                                        Subject <span class="text-rose-500">*</span>
+                                    </label>
+                                    <input type="text" wire:model="subject" required placeholder="Subject"
+                                           class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500 @error('subject') border-rose-500 @enderror" />
+                                    @error('subject') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
                                 </div>
                             </div>
 
-                            <!-- Optional Navodaya Affiliation -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 rounded-2xl bg-white border border-slate-200">
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
-                                        Navodaya Affiliation (Optional)
-                                    </label>
-                                    <select wire:model.live="navodayaAffiliation" 
-                                            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500">
-                                        <option value="none">No / Not a Navodayan</option>
-                                        <option value="alumnus">Navodaya Alumnus</option>
-                                        <option value="student">Current Navodaya Student</option>
-                                        <option value="supporter">Friend & Supporter</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">
-                                        JNV School / Batch / Org (If applicable)
-                                    </label>
-                                    <input type="text" wire:model="navodayaAffiliationDetail" placeholder="e.g. JNV Gyanpur (Optional)" 
-                                           class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500" />
-                                </div>
-                            </div>
-
+                            <!-- Message (Required) -->
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Message or Area of Interest *</label>
-                                <textarea wire:model="message" rows="4" placeholder="Tell us how you would like to get involved, contribute, or learn..."
-                                          class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500"></textarea>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">
+                                    Your Message <span class="text-rose-500">*</span>
+                                </label>
+                                <textarea wire:model="message" required rows="5" placeholder="Your message..."
+                                          class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:ring-1 focus:ring-amber-500 @error('message') border-rose-500 @enderror"></textarea>
                                 @error('message') <span class="text-xs text-rose-600 font-medium">{{ $message }}</span> @enderror
                             </div>
 
-                            <div class="pt-1">
+                            <div class="pt-2">
                                 <button type="submit"
                                         class="w-full sm:w-auto px-8 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-full shadow-md hover:shadow-lg transition-all cursor-pointer">
-                                    <span wire:loading.remove>Join NAVUDYAM</span>
-                                    <span wire:loading>Processing...</span>
+                                    <span wire:loading.remove>Send Message</span>
+                                    <span wire:loading>Sending...</span>
                                 </button>
-                                <p class="text-[11px] text-slate-500 mt-2.5">
-                                    NAVUDYAM is open to everyone. No visitor is required to have a Navodaya affiliation to participate.
-                                </p>
                             </div>
 
                         </form>
@@ -267,7 +218,6 @@
                                class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 hover:text-amber-800 transition-colors">
                                 <span>Read Our Story</span>
                                 <i class="ri-arrow-right-line text-xs"></i>
-                            </a>
                             </a>
                         </div>
                     </div>

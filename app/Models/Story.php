@@ -86,4 +86,3 @@ class Story extends Model
         );
     }
 }
-
