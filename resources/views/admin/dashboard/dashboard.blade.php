@@ -331,6 +331,15 @@
                         </span>
                         <i class="ri-arrow-right-line text-zinc-400 text-xs"></i>
                     </a>
+
+                    <a href="{{ route('admin.settings') }}" 
+                       class="w-full px-3 py-2 font-medium text-zinc-700 hover:text-zinc-950 hover:bg-zinc-50 border border-zinc-200 rounded-lg flex items-center justify-between transition-colors">
+                        <span class="flex items-center gap-2">
+                            <i class="ri-settings-4-line text-zinc-400"></i>
+                            <span>System Settings</span>
+                        </span>
+                        <i class="ri-arrow-right-line text-zinc-400 text-xs"></i>
+                    </a>
                 </div>
             </div>
 

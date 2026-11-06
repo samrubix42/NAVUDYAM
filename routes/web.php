@@ -24,6 +24,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::livewire('/stories', 'admin::stories')->name('admin.stories');
     Route::livewire('/contacts', 'admin::contacts')->name('admin.contacts');
     Route::livewire('/joins', 'admin::joins')->name('admin.joins');
+    Route::livewire('/settings', 'admin::settings')->name('admin.settings');
 });
 
 // Logout Route

@@ -120,6 +120,20 @@
                 </div>
             </div>
 
+            <!-- Group: Configuration -->
+            <div>
+                <p class="px-2.5 pb-2 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
+                    System
+                </p>
+                <div class="space-y-1">
+                    <a href="{{ route('admin.settings') }}" 
+                       class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg font-medium transition-colors {{ request()->routeIs('admin.settings') ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70' }}">
+                        <i class="ri-settings-4-line text-base shrink-0 {{ request()->routeIs('admin.settings') ? 'text-white' : 'text-slate-400' }}"></i>
+                        <span>System Settings</span>
+                    </a>
+                </div>
+            </div>
+
             <!-- Quick Website Link -->
             <div class="pt-2">
                 <a href="{{ route('home') }}" 
