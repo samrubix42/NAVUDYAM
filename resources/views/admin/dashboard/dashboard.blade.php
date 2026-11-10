@@ -343,11 +343,11 @@
                 </div>
             </div>
 
-            <!-- Upcoming Events Snapshot -->
+            <!-- Recent Events Snapshot -->
             <div class="bg-white border border-zinc-200 rounded-xl p-4 shadow-2xs space-y-3">
                 <div class="flex items-center justify-between">
                     <h3 class="text-xs font-semibold text-zinc-900 uppercase tracking-wider font-heading">
-                        Upcoming Events
+                        Events & Sessions
                     </h3>
                     <a href="{{ route('admin.events') }}" class="text-[11px] font-medium text-zinc-500 hover:text-zinc-900 transition-colors">
                         View all →
@@ -362,14 +362,14 @@
                                     <span class="font-medium text-xs text-zinc-900 truncate">
                                         {{ $evt->title }}
                                     </span>
-                                    <span class="shrink-0 text-[10px] font-semibold text-amber-800 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">
-                                        {{ $evt->event_date ? $evt->event_date->format('M d') : 'Upcoming' }}
+                                    <span class="shrink-0 text-[10px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded">
+                                        Active
                                     </span>
                                 </div>
                                 <div class="flex items-center gap-2 text-[11px] text-zinc-500">
                                     <span class="inline-flex items-center gap-1">
-                                        <i class="ri-map-pin-line text-[10px]"></i>
-                                        <span>{{ $evt->location ?? 'Online' }}</span>
+                                        <i class="ri-time-line text-[10px]"></i>
+                                        <span>Added {{ $evt->created_at ? $evt->created_at->diffForHumans() : 'Recently' }}</span>
                                     </span>
                                 </div>
                             </div>
@@ -378,7 +378,7 @@
                 @else
                     <div class="py-4 text-center text-xs text-zinc-400 space-y-1.5">
                         <i class="ri-calendar-line text-xl text-zinc-300 block"></i>
-                        <p>No upcoming events scheduled.</p>
+                        <p>No active events scheduled.</p>
                         <a href="{{ route('admin.events') }}" class="text-xs font-medium text-amber-700 hover:underline">
                             Create an event →
                         </a>

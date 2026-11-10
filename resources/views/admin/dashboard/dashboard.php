@@ -27,9 +27,8 @@ return new #[Layout('layouts::admin')] #[Title('Dashboard | NAVUDYAM Admin')] cl
 
         $recentJoins = JoinRequest::latest()->take(5)->get();
         $recentContacts = Contact::latest()->take(5)->get();
-        $upcomingEvents = Event::where('is_active', true)
-            ->where('event_date', '>=', now()->toDateString())
-            ->orderBy('event_date')
+        $upcomingEvents = Event::active()
+            ->latest()
             ->take(3)
             ->get();
 

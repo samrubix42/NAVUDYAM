@@ -33,9 +33,6 @@ test('authenticated admin can view dashboard with live metric counts', function 
 
     Event::create([
         'title' => 'Upcoming Robotics Workshop',
-        'description' => 'Hands on robotics session',
-        'event_date' => now()->addDays(5)->toDateString(),
-        'location' => 'Nagpur',
         'is_active' => true,
     ]);
 
