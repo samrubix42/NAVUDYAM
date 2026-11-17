@@ -47,7 +47,7 @@
                 
                 <!-- Right Photography with Soft Fade Mask -->
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/Picture7.jpg') }}" 
+                    <img src="{{ asset('images/slide-community.webp') }}" 
                          alt="NAVUDYAM Foundation community, learning and collaboration" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -108,7 +108,7 @@
                  class="w-full h-full absolute inset-0 flex items-center">
                 
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/Picture8.webp') }}" 
+                    <img src="{{ asset('images/slide-keynote.webp') }}" 
                          alt="Entrepreneurship and industry skills at grassroots" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
@@ -156,7 +156,7 @@
                  class="w-full h-full absolute inset-0 flex items-center">
                 
                 <div class="absolute inset-y-0 right-0 w-full sm:w-3/5 lg:w-3/5 h-full overflow-hidden pointer-events-none">
-                    <img src="{{ asset('images/Picture6.jpg') }}" 
+                    <img src="{{ asset('images/slide-mentorship.webp') }}" 
                          alt="Mentorship circle and experience sharing" 
                          class="w-full h-full object-cover object-center"
                          style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 20%, rgba(0,0,0,0.85) 45%, black 70%);" />
