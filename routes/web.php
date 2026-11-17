@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SeoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -11,6 +12,9 @@ Route::livewire('/initiatives', 'pages::initiatives')->name('initiatives');
 Route::livewire('/events', 'pages::events')->name('events');
 Route::livewire('/stories', 'pages::stories')->name('stories');
 Route::livewire('/contact', 'pages::contact')->name('contact');
+
+// Search Engine Indexing
+Route::get('/sitemap.xml', [SeoController::class, 'sitemap'])->name('sitemap');
 
 // Auth Portal (Guest Only)
 Route::middleware('guest')->group(function () {

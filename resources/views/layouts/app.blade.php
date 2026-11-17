@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{ url()->current() }}">
 
         <title>{{ $title ?? 'NAVUDYAM Foundation | Where New Ideas Find New Beginnings' }}</title>
         <meta name="description" content="NAVUDYAM Foundation is a community-driven initiative focused on education, skill development, mentorship, entrepreneurship and meaningful collaboration. Rooted in Navodaya. Open to Everyone.">
